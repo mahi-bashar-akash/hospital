@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif !important;
     font-style: normal;
 }
 
@@ -43,9 +43,10 @@ body {
 .dropdown {
     .dropdown-menu {
         .dropdown-item {
+            font-size: 14px !important;
+            color: var(--light-gray) !important;
             &:hover {
                 background-color: var(--light-theme) !important;
-                color: var(--black) !important;
             }
         }
     }
@@ -261,7 +262,7 @@ body {
             }
 
             .breadcrumb-title {
-                font-size: 18px;
+                font-size: 18px !important;
             }
 
             .breadcrumb-text {

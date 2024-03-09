@@ -24,54 +24,54 @@
                         Dashboard
                     </span>
                 </router-link>
-                <a href="javascript:void(0)" class="sidebar-body-link" @click="sideBarToggle()">
+                <router-link :to="{name: 'slider'}" class="sidebar-body-link" @click="sideBarToggle()">
                     <i class="bi bi-sliders"></i>
                     <span class="ms-2 text-link">
-                        Slider management
+                        Slider
                     </span>
-                </a>
-                <a href="javascript:void(0)" class="sidebar-body-link" @click="sideBarToggle()">
+                </router-link>
+                <router-link :to="{name: 'box'}" class="sidebar-body-link" @click="sideBarToggle()">
                     <i class="bi bi-boxes"></i>
                     <span class="ms-2 text-link">
-                        Box management
+                        Box
                     </span>
-                </a>
-                <a href="javascript:void(0)" class="sidebar-body-link" @click="sideBarToggle()">
+                </router-link>
+                <router-link :to="{name: 'doctor'}" class="sidebar-body-link" @click="sideBarToggle()">
                     <i class="bi bi-heart-pulse"></i>
                     <span class="ms-2 text-link">
                         Doctors
                     </span>
-                </a>
-                <a href="javascript:void(0)" class="sidebar-body-link" @click="sideBarToggle()">
+                </router-link>
+                <router-link :to="{name: 'feedback'}" class="sidebar-body-link" @click="sideBarToggle()">
                     <i class="bi bi-hearts"></i>
                     <span class="ms-2 text-link">
                         Feedbacks
                     </span>
-                </a>
-                <a href="javascript:void(0)" class="sidebar-body-link" @click="sideBarToggle()">
+                </router-link>
+                <router-link :to="{name: 'service'}" class="sidebar-body-link" @click="sideBarToggle()">
                     <i class="bi bi-clipboard2-heart"></i>
                     <span class="ms-2 text-link">
                         Services
                     </span>
-                </a>
-                <a href="javascript:void(0)" class="sidebar-body-link" @click="sideBarToggle()">
+                </router-link>
+                <router-link :to="{name: 'blog'}" class="sidebar-body-link" @click="sideBarToggle()">
                     <i class="bi bi-postage"></i>
                     <span class="ms-2 text-link">
                         Blogs
                     </span>
-                </a>
-                <a href="javascript:void(0)" class="sidebar-body-link" @click="sideBarToggle()">
+                </router-link>
+                <router-link :to="{name: 'event'}" class="sidebar-body-link" @click="sideBarToggle()">
                     <i class="bi bi-calendar-event"></i>
                     <span class="ms-2 text-link">
                         Events
                     </span>
-                </a>
-                <a href="javascript:void(0)" class="sidebar-body-link" @click="sideBarToggle()">
+                </router-link>
+                <router-link :to="{name: 'department'}" class="sidebar-body-link" @click="sideBarToggle()">
                     <i class="bi bi-bookmark"></i>
                     <span class="ms-2 text-link">
                         Departments
                     </span>
-                </a>
+                </router-link>
             </div>
 
         </div>
@@ -107,14 +107,14 @@
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end p-0 mt-3 me-2 overflow-hidden shadow border-0">
                                     <li>
-                                        <a href="javascript:void(0)" class="dropdown-item px-3 py-2">
+                                        <router-link :to="{name: 'profile'}" class="dropdown-item px-3 py-2">
                                             <i class="bi bi-person me-2"></i> Profile
-                                        </a>
+                                        </router-link>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)" class="dropdown-item px-3 py-2">
+                                        <router-link :to="{name: 'settings'}" class="dropdown-item px-3 py-2">
                                             <i class="bi bi-gear me-2"></i> Settings
-                                        </a>
+                                        </router-link>
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)" class="dropdown-item px-3 py-2">
