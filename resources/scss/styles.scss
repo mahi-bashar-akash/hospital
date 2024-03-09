@@ -127,10 +127,6 @@ body {
                     }
                 }
 
-                &:hover {
-                    color: var(--theme);
-                }
-
             }
 
             .sidebar-close {
@@ -146,7 +142,7 @@ body {
 
         .sidebar-body {
             height: calc(100vh - 70px);
-            padding: 20px;
+            padding: 10px 20px;
 
             @media screen and (max-width: 991px) {
                 padding: 20px 10px;
@@ -182,7 +178,7 @@ body {
                     }
                 }
 
-                &:hover {
+                &:hover, &.router-link-active {
                     color: var(--theme);
 
                     @media screen and (max-width: 991px) {

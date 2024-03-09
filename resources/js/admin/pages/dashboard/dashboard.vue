@@ -2,9 +2,11 @@
 
     <!-- breadcrumb -->
     <div class="d-flex align-items-center justify-content-start">
-        <router-link :to="{name: 'dashboard'}" class="mb-2 text-light-gray breadcrumb-title text-decoration-none">
-            Dashboard
-        </router-link>
+        <div class="mb-2">
+            <router-link :to="{name: 'dashboard'}" class="text-light-gray breadcrumb-title text-decoration-none">
+                Dashboard
+            </router-link>
+        </div>
     </div>
 
     <div class="row">
