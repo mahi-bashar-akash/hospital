@@ -1,0 +1,46 @@
+{
+  "_axios-Di5RpEPX.js": {
+    "file": "assets/axios-Di5RpEPX.js"
+  },
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
+    "file": "assets/bootstrap-icons-BOrJxbIo.woff",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff"
+  },
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
+    "file": "assets/bootstrap-icons-BtvjY1KL.woff2",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-l0sNRNKZ.js",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/admin/app.js": {
+    "file": "assets/app-FUM2hCkq.js",
+    "src": "resources/js/admin/app.js",
+    "isEntry": true,
+    "imports": [
+      "_axios-Di5RpEPX.js"
+    ],
+    "css": [
+      "assets/app-DUn1kput.css"
+    ],
+    "assets": [
+      "assets/bootstrap-icons-BtvjY1KL.woff2",
+      "assets/bootstrap-icons-BOrJxbIo.woff"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CY-JunJu.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_axios-Di5RpEPX.js"
+    ]
+  },
+  "resources/scss/styles.scss": {
+    "file": "assets/styles-DrR7uE1x.css",
+    "src": "resources/scss/styles.scss",
+    "isEntry": true
+  }
+}
