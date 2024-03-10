@@ -7,17 +7,13 @@
     --light-gray: #6c757d;
     --theme: #727cf5;
     --light-theme: rgba(114, 124, 245, 0.1);
+    --font-family: "Roboto", sans-serif;
+    --font-style-normal: normal;
 }
 
 body {
-    font-family: "Roboto", sans-serif !important;
-    font-style: normal;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: var(--font-family) !important;
+    font-style: var(--font-style-normal) !important;
 }
 
 /* --- --- --- --- 01 - typography --- --- --- --- */
@@ -37,3 +33,7 @@ body {
 
 /* --- --- --- --- 06 - auth --- --- --- --- */
 @import "weight/authentication/authentication";
+
+/* --- --- --- --- 07 - front --- --- --- --- */
+@import "weight/front-panel/front-panel";
+

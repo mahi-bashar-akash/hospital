@@ -14,6 +14,8 @@
         "@vitejs/plugin-vue": "^5.0.4",
         "bootstrap": "^5.3.3",
         "bootstrap-icons": "^1.11.3",
+        "jquery": "^3.7.1",
+        "owl.carousel": "^2.3.4",
         "sass": "^1.71.1",
         "vue": "^3.4.21",
         "vue-router": "^4.3.0"

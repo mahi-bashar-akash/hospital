@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\FrontController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,11 @@ Route::get('/admin', [AdminController::class, 'admin'])->where('any', '.*')->nam
 Route::get('/admin/{any}', [AdminController::class, 'admin'])->where('any', '.*')->name('lvs.admin.any');
 
 Route::get('/admin', function () { return redirect()->route('lvs.admin.any', 'dashboard'); } );
+
+/* --- --- --- index --- --- --- */
+
+Route::get('/', [FrontController::class, 'index'])->where('any', '.*')->name('lvs.front');
+
+Route::get('/{any}', [FrontController::class, 'index'])->where('any', '.*')->name('lvs.front.any');
+
+Route::get('/', function () { return redirect()->route('lvs.front.any', 'home'); } );
