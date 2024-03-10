@@ -4,23 +4,23 @@
 
         <div class="mb-2">
             <router-link :to="{name: 'department'}" class="text-light-gray breadcrumb-title text-decoration-none">
-                Department management
+                Departments
             </router-link>
         </div>
 
-        <div class="mb-2 d-flex align-items-center justify-content-start breadcrumb-text">
+        <div class="mb-2 breadcrumb breadcrumb-text">
 
-            <router-link :to="{name: 'dashboard'}" class="me-1 text-light-gray text-decoration-none">
-                Dashboard
-            </router-link>
-
-            <div class="me-1 text-light-gray">
-                <i class="bi bi-chevron-right"></i>
+            <div class="breadcrumb-item">
+                <router-link :to="{name: 'dashboard'}" class="me-1 text-light-gray text-decoration-none">
+                    Dashboard
+                </router-link>
             </div>
 
-            <router-link :to="{name: 'department'}" class="text-light-gray text-decoration-none">
-                Department management
-            </router-link>
+            <div class="breadcrumb-item">
+                <router-link :to="{name: 'department'}" class="text-light-gray text-decoration-none">
+                    Departments
+                </router-link>
+            </div>
 
         </div>
 

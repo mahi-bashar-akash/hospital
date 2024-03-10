@@ -3,21 +3,31 @@
     <div class="d-block d-sm-flex align-items-center justify-content-between">
 
         <div class="mb-2">
-            <router-link :to="{name: 'slider'}" class="text-light-gray breadcrumb-title text-decoration-none">
-                Slider
+            <router-link :to="{name: 'sliderManage'}" class="text-light-gray breadcrumb-title text-decoration-none">
+                Slides
             </router-link>
         </div>
 
-        <div class="mb-2 d-flex align-items-center justify-content-start breadcrumb-text">
-            <router-link :to="{name: 'dashboard'}" class="me-1 text-light-gray text-decoration-none">
-                Dashboard
-            </router-link>
-            <div class="me-1 text-light-gray">
-                <i class="bi bi-chevron-right"></i>
+        <div class="mb-2 breadcrumb breadcrumb-text">
+
+            <div class="breadcrumb-item">
+                <router-link :to="{name: 'dashboard'}" class="me-1 text-light-gray text-decoration-none">
+                    Dashboard
+                </router-link>
             </div>
-            <router-link :to="{name: 'slider'}" class="text-light-gray text-decoration-none">
-                Slider
-            </router-link>
+
+            <div class="breadcrumb-item">
+                <router-link :to="{name: 'slider'}" class="text-light-gray text-decoration-none">
+                    Slides
+                </router-link>
+            </div>
+
+            <div class="breadcrumb-item">
+                <a href="javascript:void(0)" class="text-light-gray text-decoration-none">
+                    New
+                </a>
+            </div>
+
         </div>
 
     </div>

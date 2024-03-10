@@ -4,23 +4,29 @@
 
         <div class="mb-2">
             <router-link :to="{name: 'eventManage'}" class="text-light-gray breadcrumb-title text-decoration-none">
-                Event
+                Events
             </router-link>
         </div>
 
-        <div class="mb-2 d-flex align-items-center justify-content-start breadcrumb-text">
+        <div class="mb-2 breadcrumb breadcrumb-text">
 
-            <router-link :to="{name: 'dashboard'}" class="me-1 text-light-gray text-decoration-none">
-                Dashboard
-            </router-link>
-
-            <div class="me-1 text-light-gray">
-                <i class="bi bi-chevron-right"></i>
+            <div class="breadcrumb-item">
+                <router-link :to="{name: 'dashboard'}" class="me-1 text-light-gray text-decoration-none">
+                    Dashboard
+                </router-link>
             </div>
 
-            <router-link :to="{name: 'eventManage'}" class="text-light-gray text-decoration-none">
-                event
-            </router-link>
+            <div class="breadcrumb-item">
+                <router-link :to="{name: 'eventManage'}" class="text-light-gray text-decoration-none">
+                    Events
+                </router-link>
+            </div>
+
+            <div class="breadcrumb-item">
+                <router-link :to="{name: 'eventManage'}" class="text-light-gray text-decoration-none">
+                    New
+                </router-link>
+            </div>
 
         </div>
 

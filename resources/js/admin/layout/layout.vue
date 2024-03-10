@@ -86,7 +86,7 @@
                     <div class="content-header-inner">
 
                         <!-- sidebar toggle -->
-                        <button type="button" class="btn btn-icon border-0" @click="sideBarToggle">
+                        <button type="button" class="btn btn-icon sidebar-toggle border-0" @click="sideBarToggle">
                             <i class="bi bi-justify-left"></i>
                         </button>
 
