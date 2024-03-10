@@ -1,0 +1,52 @@
+.panel {
+    display: flex;
+
+    @import "component/sidebar";
+
+    .content {
+        width: calc(100% - 250px);
+        height: 100vh;
+
+        @media screen and (max-width: 991px) {
+            width: calc(100% - 60px);
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+
+        @import "component/content-header";
+
+        .content-body {
+            height: calc(100vh - 70px);
+            background-color: var(--light-theme);
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                background-color: transparent;
+                width: 0;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: var(--light-theme);
+                border-radius: 0;
+                height: 0 !important;
+            }
+
+            .breadcrumb-title {
+                font-size: 16px !important;
+            }
+
+            .breadcrumb-text {
+                font-size: 14px !important;
+            }
+
+            @import "component/dashboard";
+
+            @import "component/card-content";
+
+        }
+
+    }
+
+}

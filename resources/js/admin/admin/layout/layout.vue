@@ -107,17 +107,17 @@
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end p-0 mt-3 me-2 overflow-hidden shadow border-0">
                                     <li>
-                                        <router-link :to="{name: 'profile'}" class="dropdown-item px-3 py-2">
+                                        <router-link :to="{name: 'profile'}" class="dropdown-item">
                                             <i class="bi bi-person me-2"></i> Profile
                                         </router-link>
                                     </li>
                                     <li>
-                                        <router-link :to="{name: 'settings'}" class="dropdown-item px-3 py-2">
+                                        <router-link :to="{name: 'settings'}" class="dropdown-item">
                                             <i class="bi bi-gear me-2"></i> Settings
                                         </router-link>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0)" class="dropdown-item px-3 py-2">
+                                        <a href="javascript:void(0)" class="dropdown-item">
                                             <i class="bi bi-box-arrow-right me-2"></i> Logout
                                         </a>
                                     </li>

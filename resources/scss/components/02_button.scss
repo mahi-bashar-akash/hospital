@@ -1,0 +1,13 @@
+/* button */
+
+.btn-icon {
+    background-color: transparent;
+    transition: 0.3s all ease-in-out;
+    color: var(--light-gray) !important;
+
+    &:hover {
+        transition: 0.3s all ease-in-out;
+        background-color: var(--light-theme) !important;
+    }
+
+}

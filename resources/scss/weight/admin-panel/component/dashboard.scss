@@ -1,0 +1,15 @@
+.card-hover {
+    color: var(--light-gray);
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+        transition: 0.3s all ease-in-out;
+        box-shadow: 0 0 8px 0 var(--theme) inset;
+
+        .effect {
+            color: var(--theme);
+        }
+
+    }
+
+}

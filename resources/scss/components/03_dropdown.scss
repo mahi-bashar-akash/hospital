@@ -1,0 +1,16 @@
+/* dropdown */
+
+.dropdown {
+    .dropdown-menu {
+        .dropdown-item {
+            font-size: 14px !important;
+            color: var(--light-gray) !important;
+            background-color: transparent !important;
+            padding: 10px 20px;
+
+            &:hover, &.router-link-active {
+                color: var(--theme) !important;
+            }
+        }
+    }
+}
