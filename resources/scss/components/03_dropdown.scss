@@ -12,15 +12,6 @@
             padding: 10px 20px;
             transition: 0.3s all ease-in-out;
 
-            &.background-hover {
-
-                &:hover {
-                    transition: 0.3s all ease-in-out;
-                    background-color: var(--light-theme) !important;
-                }
-
-            }
-
             &:hover, &.router-link-active {
                 transition: 0.3s all ease-in-out;
                 color: var(--theme) !important;

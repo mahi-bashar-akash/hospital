@@ -1,6 +1,6 @@
 <template>
 
-    <header class="w-100 bg-light">
+    <header class="w-100 bg-light sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="javascript:void(0)">
@@ -24,42 +24,10 @@
                                 Doctors
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)" @click="collapse">
                                 Departments
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end p-0 m-0 mt-3 border-0 shadow overflow-hidden">
-                                <li>
-                                    <a class="dropdown-item background-hover" href="javascript:void(0)" @click="collapse">
-                                        Cardiology
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item background-hover" href="javascript:void(0)" @click="collapse">
-                                        Dental
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item background-hover" href="javascript:void(0)" @click="collapse">
-                                        Neurology
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item background-hover" href="javascript:void(0)" @click="collapse">
-                                        Pediatric
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item background-hover" href="javascript:void(0)" @click="collapse">
-                                        Traumatology
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item background-hover" href="javascript:void(0)" @click="collapse">
-                                        Xray
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="javascript:void(0)" @click="collapse">
@@ -74,6 +42,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="javascript:void(0)" @click="collapse">
                                 Events
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)" @click="collapse">
+                                Blogs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)" @click="collapse">
+                                Book appointment
                             </a>
                         </li>
                         <li class="nav-item">

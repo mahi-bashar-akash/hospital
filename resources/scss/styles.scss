@@ -6,6 +6,9 @@
     --white: #ffffff;
     --light-gray: #6c757d;
     --theme: #727cf5;
+    --dark-theme: #4750ce;
+    --theme-danger: #f4524d;
+    --dark-theme-danger: #f23630;
     --light-theme: rgba(114, 124, 245, 0.1);
     --font-family: "Roboto", sans-serif;
     --font-style-normal: normal;
@@ -28,12 +31,15 @@ body {
 /* --- --- --- --- 04 - table --- --- --- --- */
 @import "components/04_table";
 
-/* --- --- --- --- 05 - admin panel --- --- --- --- */
+/* --- --- --- --- 05 - form --- --- --- --- */
+@import "components/05_form";
+
+/* --- --- --- --- 06 - admin panel --- --- --- --- */
 @import "weight/admin-panel/admin-panel";
 
-/* --- --- --- --- 06 - auth --- --- --- --- */
+/* --- --- --- --- 07 - auth --- --- --- --- */
 @import "weight/authentication/authentication";
 
-/* --- --- --- --- 07 - front --- --- --- --- */
+/* --- --- --- --- 08 - front --- --- --- --- */
 @import "weight/front-panel/front-panel";
 
