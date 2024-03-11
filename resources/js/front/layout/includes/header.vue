@@ -3,9 +3,9 @@
     <header class="w-100 bg-light sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="javascript:void(0)">
+                <router-link :to="{name: 'home'}" class="navbar-brand">
                     Hospital <i class="ms-1 bi bi-plus-circle text-danger"></i>
-                </a>
+                </router-link>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" @click="collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -15,49 +15,49 @@
                             <button type="button" class="btn btn-close border-0 p-3 icon-close" @click="collapse"></button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" @click="collapse">
+                            <router-link :to="{name: 'home'}" class="nav-link" @click="collapse">
                                 Home
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" @click="collapse">
+                            <router-link :to="{name: 'doctor'}" class="nav-link" @click="collapse">
                                 Doctors
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" @click="collapse">
+                            <router-link :to="{name: 'department'}" class="nav-link" @click="collapse">
                                 Departments
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" @click="collapse">
+                            <router-link :to="{name: 'gallery'}" class="nav-link" @click="collapse">
                                 Gallery
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" @click="collapse">
+                            <router-link :to="{name: 'service'}" class="nav-link" @click="collapse">
                                 Services
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" @click="collapse">
+                            <router-link :to="{name: 'event'}" class="nav-link" @click="collapse">
                                 Events
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" @click="collapse">
+                            <router-link :to="{name: 'blog'}" class="nav-link" @click="collapse">
                                 Blogs
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" @click="collapse">
+                            <router-link :to="{name: 'appointment'}" class="nav-link" @click="collapse">
                                 Book appointment
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" @click="collapse">
+                            <router-link :to="{name: 'contact'}" class="nav-link" @click="collapse">
                                 Contact
-                            </a>
+                            </router-link>
                         </li>
                     </ul>
                 </div>

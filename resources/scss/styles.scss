@@ -9,6 +9,8 @@
     --dark-theme: #4750ce;
     --theme-danger: #f4524d;
     --dark-theme-danger: #f23630;
+    --theme-success: #43a047;
+    --dark-theme-success: #3f8642;
     --light-theme: rgba(114, 124, 245, 0.1);
     --font-family: "Roboto", sans-serif;
     --font-style-normal: normal;
@@ -34,12 +36,15 @@ body {
 /* --- --- --- --- 05 - form --- --- --- --- */
 @import "components/05_form";
 
-/* --- --- --- --- 06 - admin panel --- --- --- --- */
+/* --- --- --- --- 06 - pagination --- --- --- --- */
+@import "components/06_pagination";
+
+/* --- --- --- --- admin panel --- --- --- --- */
 @import "weight/admin-panel/admin-panel";
 
-/* --- --- --- --- 07 - auth --- --- --- --- */
+/* --- --- --- --- auth panel --- --- --- --- */
 @import "weight/authentication/authentication";
 
-/* --- --- --- --- 08 - front --- --- --- --- */
+/* --- --- --- --- front panel --- --- --- --- */
 @import "weight/front-panel/front-panel";
 

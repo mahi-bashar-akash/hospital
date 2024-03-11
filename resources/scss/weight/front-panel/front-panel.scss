@@ -2,8 +2,7 @@
 
     .navbar {
 
-        .navbar-brand {
-        }
+        .navbar-brand {  }
 
         .collapse, .collapsing {
             font-size: 14px !important;
@@ -55,7 +54,7 @@
                     .nav-link {
                         transition: 0.3s all ease-in-out;
 
-                        &.router-link-active, &.router-link-exact-active {
+                        &:hover, &.router-link-active, &.router-link-exact-active {
                             transition: 0.3s all ease-in-out;
                             color: var(--theme);
                         }
@@ -106,6 +105,12 @@
 
         }
 
+    }
+
+    .breadcrumb-content {
+        height: 180px;
+        background-size: 100% !important;
+        object-fit: cover;
     }
 
 

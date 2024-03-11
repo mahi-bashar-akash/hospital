@@ -104,7 +104,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/doctor/doctor-1.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/doctor/doctor-1.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
                         <div class="ps-3 pt-3"> Name </div>
                         <div class="ps-3 pt-3"> Profession </div>
                         <div class="ps-3 py-3"> Description </div>
@@ -112,7 +112,7 @@
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/doctor/doctor-2.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/doctor/doctor-2.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
                         <div class="ps-3 pt-3"> Name </div>
                         <div class="ps-3 pt-3"> Profession </div>
                         <div class="ps-3 py-3"> Description </div>
@@ -120,7 +120,7 @@
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/doctor/doctor-3.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/doctor/doctor-3.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
                         <div class="ps-3 pt-3"> Name </div>
                         <div class="ps-3 pt-3"> Profession </div>
                         <div class="ps-3 py-3"> Description </div>
@@ -128,7 +128,7 @@
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/doctor/doctor-4.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/doctor/doctor-4.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
                         <div class="ps-3 pt-3"> Name </div>
                         <div class="ps-3 pt-3"> Profession </div>
                         <div class="ps-3 py-3"> Description </div>
@@ -179,28 +179,28 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-1.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-1.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-2.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-2.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-3.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-3.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-4.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-4.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
@@ -221,28 +221,28 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-5.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-5.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-6.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-6.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-7.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-7.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-8.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-8.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
@@ -290,56 +290,56 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-1.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-1.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-2.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-2.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-3.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-3.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-4.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-4.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-5.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-5.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-6.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-6.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-7.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-7.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
                     <div class="border bg-white">
-                        <img :src="`/images/department/department-8.jpg`" class="img-fluid object-fit-cover w-100" style="height: 300px" alt="doctor">
+                        <img :src="`/images/department/department-8.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
                         <div class="ps-3 pt-3"> Department name </div>
                         <div class="ps-3 py-3"> Description </div>
                     </div>
