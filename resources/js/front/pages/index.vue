@@ -279,7 +279,7 @@
     </section>
 
     <!-- department section -->
-    <section class="w-100">
+    <section class="w-100 bg-light">
         <div class="container py-5 text-light-gray">
             <div class="mb-3 text-center fw-semibold fs-4">
                 Departments
