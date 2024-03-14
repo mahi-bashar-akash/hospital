@@ -27,13 +27,13 @@
                 <router-link :to="{name: 'slider'}" class="sidebar-body-link" @click="sideBarToggle()">
                     <i class="bi bi-sliders"></i>
                     <span class="ms-2 text-link">
-                        Slider
+                        Slides
                     </span>
                 </router-link>
                 <router-link :to="{name: 'box'}" class="sidebar-body-link" @click="sideBarToggle()">
                     <i class="bi bi-boxes"></i>
                     <span class="ms-2 text-link">
-                        Box
+                        Boxes
                     </span>
                 </router-link>
                 <router-link :to="{name: 'doctor'}" class="sidebar-body-link" @click="sideBarToggle()">
