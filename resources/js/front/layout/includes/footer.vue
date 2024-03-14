@@ -4,15 +4,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-4 py-4 px-3">
-                    <router-link :to="{name: 'home'}" class="mb-3 fw-semibold text-white fs-5">
-                        Hospital <i class="ms-2 bi bi-plus-circle text-danger"></i>
-                    </router-link>
-                    <a href="javascript:void(0)" class="nav-link text-white mb-2">
-                        © 2024 Hospital Plus.
-                    </a>
-                    <a href="javascript:void(0)" class="nav-link text-white mb-2">
-                        Designed by ThemeWarrior
-                    </a>
+                    <div class="mb-3">
+                        <router-link :to="{name: 'home'}" class="fw-semibold text-white fs-5 text-decoration-none">
+                            Hospital <i class="ms-2 bi bi-plus-circle text-danger"></i>
+                        </router-link>
+                    </div>
+                    <div class="mb-2">
+                        <a href="javascript:void(0)" class="nav-link text-white">
+                            © 2024 Hospital Plus.
+                        </a>
+                    </div>
+                    <div class="mb-2">
+                        <a href="javascript:void(0)" class="nav-link text-white">
+                            Designed by ThemeWarrior
+                        </a>
+                    </div>
                     <div class="mb-2 fw-semibold text-white fs-5 mt-3">
                         TAGS
                     </div>

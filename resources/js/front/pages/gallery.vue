@@ -34,14 +34,8 @@
             <button type="button" class="btn rounded-0 px-3 btn-category active">
                 All
             </button>
-            <button type="button" class="btn rounded-0 px-3 btn-category">
-                Facility
-            </button>
-            <button type="button" class="btn rounded-0 px-3 btn-category">
-                Hospital
-            </button>
-            <button type="button" class="btn rounded-0 px-3 btn-category">
-                Services
+            <button type="button" class="btn rounded-0 px-3 btn-category" v-for="each in category">
+                {{each.category}}
             </button>
         </div>
 
@@ -50,67 +44,17 @@
             <!-- doctor data list -->
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
 
-                <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
+                <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray" v-for="each in galleryDataList">
                     <div class="border bg-white">
-                        <img :src="`/images/doctor/doctor-1.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3 fw-semibold"> Inpatient room </div>
-                        <div class="ps-3 py-3"> Facility </div>
-                    </div>
-                </a>
-
-                <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
-                        <img :src="`/images/doctor/doctor-2.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3 fw-semibold"> Nephrologist care </div>
-                        <div class="ps-3 py-3"> Services </div>
-                    </div>
-                </a>
-
-                <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
-                        <img :src="`/images/doctor/doctor-3.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3 fw-semibold"> Prenatal Care </div>
-                        <div class="ps-3 py-3"> Services </div>
-                    </div>
-                </a>
-
-                <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
-                        <img :src="`/images/doctor/doctor-4.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3 fw-semibold"> Prenatal Care </div>
-                        <div class="ps-3 py-3"> Services </div>
-                    </div>
-                </a>
-
-                <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
-                        <img :src="`/images/doctor/doctor-5.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3 fw-semibold"> DNA Diagnostic Lab </div>
-                        <div class="ps-3 py-3"> Facility </div>
-                    </div>
-                </a>
-
-                <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
-                        <img :src="`/images/doctor/doctor-6.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3 fw-semibold"> Name </div>
-                        <div class="ps-3 py-3"> Description </div>
-                    </div>
-                </a>
-
-                <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
-                        <img :src="`/images/doctor/doctor-7.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3 fw-semibold"> Radiology Clinic </div>
-                        <div class="ps-3 py-3"> Services </div>
-                    </div>
-                </a>
-
-                <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
-                        <img :src="`/images/doctor/doctor-8.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3 fw-semibold"> Pediatrician Clinic </div>
-                        <div class="ps-3 py-3"> Services </div>
+                        <img :src="each.filePath" class="img-fluid object-fit-cover w-100 hpx-250" :alt="`gallery `+each.id">
+                        <div class="ps-3 pt-3 fw-medium">
+                            <div class="truncate-to-1-line">
+                                {{each.name}}
+                            </div>
+                        </div>
+                        <div class="ps-3 py-3">
+                            {{each.category}}
+                        </div>
                     </div>
                 </a>
 
@@ -130,6 +74,21 @@ export default {
 
         return{
             imageUrl: '/images/breadcrumb.jpg',
+            category: [
+                { id: '1', category: 'Facility' },
+                { id: '2', category: 'Hospital' },
+                { id: '3', category: 'Services' },
+            ],
+            galleryDataList: [
+                { id: '', filePath: '/images/doctor/doctor-1.jpg', category: 'Facility', name: 'Inpatient room' },
+                { id: '', filePath: '/images/doctor/doctor-2.jpg', category: 'Services', name: 'Nephrologist care' },
+                { id: '', filePath: '/images/doctor/doctor-3.jpg', category: 'Services', name: 'Prenatal Care ' },
+                { id: '', filePath: '/images/doctor/doctor-4.jpg', category: 'Services', name: 'Prenatal Care ' },
+                { id: '', filePath: '/images/doctor/doctor-5.jpg', category: 'Facility', name: 'DNA Diagnostic Lab ' },
+                { id: '', filePath: '/images/doctor/doctor-6.jpg', category: 'Services', name: 'Pediatrician Clinic ' },
+                { id: '', filePath: '/images/doctor/doctor-7.jpg', category: 'Services', name: 'Radiology Clinic ' },
+                { id: '', filePath: '/images/doctor/doctor-8.jpg', category: 'Services', name: 'Pediatrician Clinic ' },
+            ]
         }
 
     },

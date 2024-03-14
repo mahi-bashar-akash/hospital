@@ -35,35 +35,28 @@
 
                 <!-- list of data -->
 
-                <div class="py-4 border-bottom">
+                <div class="py-4 border-bottom" v-for="each in blogDataList">
 
                     <a href="javascript:void(0)" class="text-decoration-none text-light-gray w-100">
 
                         <div class="fs-3 mb-3">
-                            Together we can do so much
+                            {{each.title}}
                         </div>
 
                         <div class="d-flex align-items-center mb-3 text-opacity-50 text-secondary small">
-                        <span class="me-2">
-                            <i class="bi bi-calendar3 me-2"></i> Mar 11, 2024
-                        </span>
-                            <span class="me-2">
-                            <i class="bi bi-person me-2"></i> Ashiddiqi
-                        </span>
-                            <span class="me-2">
-                            <i class="bi bi-tag me-2"></i> Blogs
-                        </span>
+                            <span class="me-2"> <i class="bi bi-calendar3 me-2"></i> {{each.date}} </span>
+                            <span class="me-2"> <i class="bi bi-person me-2"></i> {{each.author}} </span>
+                            <span class="me-2"> <i class="bi bi-tag me-2"></i> {{each.categoryType}} </span>
                         </div>
 
                         <div class="mb-3">
-                            <img :src="`/images/blog/blog-1.jpg`" class="img-fluid object-fit-cover w-100" alt="blog 1">
+                            <img :src="each.filePath" class="img-fluid object-fit-cover w-100" :alt="each.id">
                         </div>
 
                         <div class="mb-3">
-                            Chosen from among all others by the Immortal Elders – Solomon, Hercules, Atlas, Zeus, Achilles,
-                            Mercury – Billy Batson and his mentor travel the highways and byways of the land on a
-                            never-ending mission: to right wrongs, to develop understanding, and to seek justice for all! In
-                            time of dire need, young Billy has been granted the power by the…
+                            <div class="truncate-to-2-line">
+                                {{each.description}}
+                            </div>
                         </div>
 
                         <button type="button" class="btn btn-theme-success px-4 py-2 rounded-1">
@@ -74,123 +67,7 @@
 
                 </div>
 
-                <div class="py-4 border-bottom">
-
-                    <a href="javascript:void(0)" class="text-decoration-none text-light-gray w-100">
-
-                    <div class="fs-3 mb-3">
-                        Together we can do so much
-                    </div>
-
-                    <div class="d-flex align-items-center mb-3 text-opacity-50 text-secondary small">
-                        <span class="me-2">
-                            <i class="bi bi-calendar3 me-2"></i> Mar 11, 2024
-                        </span>
-                        <span class="me-2">
-                            <i class="bi bi-person me-2"></i> Ashiddiqi
-                        </span>
-                        <span class="me-2">
-                            <i class="bi bi-tag me-2"></i> Blogs
-                        </span>
-                    </div>
-
-                    <div class="mb-3">
-                        <img :src="`/images/blog/blog-2.jpg`" class="img-fluid object-fit-cover w-100" alt="blog 2">
-                    </div>
-
-                    <div class="mb-3">
-                        Chosen from among all others by the Immortal Elders – Solomon, Hercules, Atlas, Zeus, Achilles,
-                        Mercury – Billy Batson and his mentor travel the highways and byways of the land on a
-                        never-ending mission: to right wrongs, to develop understanding, and to seek justice for all! In
-                        time of dire need, young Billy has been granted the power by the…
-                    </div>
-
-                    <button type="button" class="btn btn-theme-success px-4 py-2 rounded-1">
-                        Learn more
-                    </button>
-
-                </a>
-
-                </div>
-
-                <div class="py-4 border-bottom">
-
-                    <a href="javascript:void(0)" class="text-decoration-none text-light-gray w-100">
-
-                        <div class="fs-3 mb-3">
-                            Together we can do so much
-                        </div>
-
-                        <div class="d-flex align-items-center mb-3 text-opacity-50 text-secondary small">
-                        <span class="me-2">
-                            <i class="bi bi-calendar3 me-2"></i> Mar 11, 2024
-                        </span>
-                            <span class="me-2">
-                            <i class="bi bi-person me-2"></i> Ashiddiqi
-                        </span>
-                            <span class="me-2">
-                            <i class="bi bi-tag me-2"></i> Blogs
-                        </span>
-                        </div>
-
-                        <div class="mb-3">
-                            <img :src="`/images/blog/blog-3.jpg`" class="img-fluid object-fit-cover w-100" alt="blog 3">
-                        </div>
-
-                        <div class="mb-3">
-                            Chosen from among all others by the Immortal Elders – Solomon, Hercules, Atlas, Zeus, Achilles,
-                            Mercury – Billy Batson and his mentor travel the highways and byways of the land on a
-                            never-ending mission: to right wrongs, to develop understanding, and to seek justice for all! In
-                            time of dire need, young Billy has been granted the power by the…
-                        </div>
-
-                        <button type="button" class="btn btn-theme-success px-4 py-2 rounded-1">
-                            Learn more
-                        </button>
-
-                    </a>
-
-                </div>
-
-                <div class="py-4 border-bottom">
-
-                    <a href="javascript:void(0)" class="text-decoration-none text-light-gray w-100">
-
-                        <div class="fs-3 mb-3">
-                            Together we can do so much
-                        </div>
-
-                        <div class="d-flex align-items-center mb-3 text-opacity-50 text-secondary small">
-                        <span class="me-2">
-                            <i class="bi bi-calendar3 me-2"></i> Mar 11, 2024
-                        </span>
-                            <span class="me-2">
-                            <i class="bi bi-person me-2"></i> Ashiddiqi
-                        </span>
-                            <span class="me-2">
-                            <i class="bi bi-tag me-2"></i> Blogs
-                        </span>
-                        </div>
-
-                        <div class="mb-3">
-                            <img :src="`/images/blog/blog-4.jpg`" class="img-fluid object-fit-cover w-100" alt="blog 4">
-                        </div>
-
-                        <div class="mb-3">
-                            Chosen from among all others by the Immortal Elders – Solomon, Hercules, Atlas, Zeus, Achilles,
-                            Mercury – Billy Batson and his mentor travel the highways and byways of the land on a
-                            never-ending mission: to right wrongs, to develop understanding, and to seek justice for all! In
-                            time of dire need, young Billy has been granted the power by the…
-                        </div>
-
-                        <button type="button" class="btn btn-theme-success px-4 py-2 rounded-1">
-                            Learn more
-                        </button>
-
-                    </a>
-
-                </div>
-
+                <!-- pagination -->
                 <nav aria-label="Page navigation example" class="mt-5">
                     <ul class="pagination justify-content-center">
                         <li class="page-item">
@@ -222,9 +99,12 @@
                 </nav>
 
             </div>
+
             <div class="col-lg-4">
 
                 <div class="py-4">
+
+                    <!-- search -->
 
                     <div class="position-relative">
                         <input type="text" name="keyword" class="form-control ps-5" placeholder="Search here" required autocomplete="new-keyword">
@@ -234,38 +114,21 @@
                     </div>
 
                     <div class="mt-3 fs-4 text-light-gray">
-                        Blog categories
+                        Blog Categories
                     </div>
 
+                    <!-- blog category list -->
+
                     <div class="mt-3">
-                        <a href="javascript:void(0)" class="link-icon-hover py-2 mb-2">
+
+                        <a href="javascript:void(0)" class="link-icon-hover py-2 mb-2" v-for="each in categoryType">
                             <span class="d-flex align-items-center">
                                 <i class="bi bi-folder-fill me-2"></i>
-                                Blogs
+                                {{each.name}}
                             </span>
-                            <span class="badge bg-badge">( 20 )</span>
+                            <span class="badge bg-badge">( {{each.count}} )</span>
                         </a>
-                        <a href="javascript:void(0)" class="link-icon-hover py-2 mb-2">
-                            <span class="d-flex align-items-center">
-                                <i class="bi bi-folder-fill me-2"></i>
-                                Counselling
-                            </span>
-                            <span class="badge bg-badge">( 15 )</span>
-                        </a>
-                        <a href="javascript:void(0)" class="link-icon-hover py-2 mb-2">
-                            <span class="d-flex align-items-center">
-                                <i class="bi bi-folder-fill me-2"></i>
-                                Health
-                            </span>
-                            <span class="badge bg-badge">( 10 )</span>
-                        </a>
-                        <a href="javascript:void(0)" class="link-icon-hover py-2 mb-2">
-                            <span class="d-flex align-items-center">
-                                <i class="bi bi-folder-fill me-2"></i>
-                                Kids
-                            </span>
-                            <span class="badge bg-badge">( 18 )</span>
-                        </a>
+
                     </div>
 
                     <div class="mt-3 fs-4 text-light-gray">
@@ -273,33 +136,11 @@
                     </div>
 
                     <div class="mt-3">
-                        <button type="button" class="btn btn-outline-theme px-3 py-1 m-1">
-                            Beach
+
+                        <button type="button" class="btn btn-outline-secondary px-3 py-1 me-1 mb-1" v-for="each in blogTagList">
+                            {{each.name}}
                         </button>
-                        <button type="button" class="btn btn-outline-theme px-3 py-1 m-1">
-                            Health
-                        </button>
-                        <button type="button" class="btn btn-outline-theme px-3 py-1 m-1">
-                            Holiday
-                        </button>
-                        <button type="button" class="btn btn-outline-theme px-3 py-1 m-1">
-                            Information
-                        </button>
-                        <button type="button" class="btn btn-outline-theme px-3 py-1 m-1">
-                            Kids
-                        </button>
-                        <button type="button" class="btn btn-outline-theme px-3 py-1 m-1">
-                            Music
-                        </button>
-                        <button type="button" class="btn btn-outline-theme px-3 py-1 m-1">
-                            Nature
-                        </button>
-                        <button type="button" class="btn btn-outline-theme px-3 py-1 m-1">
-                            Random Stuff
-                        </button>
-                        <button type="button" class="btn btn-outline-theme px-3 py-1 m-1">
-                            Rock
-                        </button>
+
                     </div>
 
                 </div>
@@ -320,6 +161,29 @@ export default {
 
         return {
             imageUrl: '/images/breadcrumb.jpg',
+            blogDataList: [
+                { id: '1', title: 'Together we can do so much', date: '01, Fri, 2023', author: 'Alber Izak', categoryType: 'Blogs', filePath: '/images/blog/blog-1.jpg', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed.' },
+                { id: '2', title: 'Together we can do so much', date: '01, Fri, 2023', author: 'Alber Izak', categoryType: 'Blogs', filePath: '/images/blog/blog-2.jpg', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed.' },
+                { id: '3', title: 'Together we can do so much', date: '01, Fri, 2023', author: 'Alber Izak', categoryType: 'Blogs', filePath: '/images/blog/blog-3.jpg', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed.' },
+                { id: '4', title: 'Together we can do so much', date: '01, Fri, 2023', author: 'Alber Izak', categoryType: 'Blogs', filePath: '/images/blog/blog-4.jpg', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id non odit quis recusandae sed.' },
+            ],
+            categoryType: [
+                { id: '1', name: 'Blogs', count: '20', },
+                { id: '2', name: 'Counselling', count: '15', },
+                { id: '3', name: 'Health', count: '10', },
+                { id: '4', name: 'Kids', count: '18', },
+            ],
+            blogTagList: [
+                { id: '1', name: 'Beach' },
+                { id: '2', name: 'Health' },
+                { id: '3', name: 'Holiday' },
+                { id: '4', name: 'Information' },
+                { id: '5', name: 'Kids' },
+                { id: '6', name: 'Music' },
+                { id: '7', name: 'Nature' },
+                { id: '8', name: 'Random Stuff' },
+                { id: '9', name: 'Rock' },
+            ]
         }
 
     },

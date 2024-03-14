@@ -14,7 +14,7 @@
 .btn-category {
     color: var(--light-gray) !important;
     border: 0 !important;
-    border-bottom: 2px solid var(--light-gray) !important;
+    border-bottom: 2px solid var(--bs-border-color) !important;
     transition: 0.3s all ease-in-out;
 
     &:hover, &.active {

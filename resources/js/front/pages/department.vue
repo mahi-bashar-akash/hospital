@@ -31,75 +31,33 @@
 
         <!-- description -->
         <div class="mb-4 text-light-gray">
-            Have you tried Wheaties? They’re whole wheat with all of the bran. Won’t you try Wheaties? For wheat is the best food of man. They’re crispy and crunchy the whole year through, The kiddies never tire of them and neither will you. So just try Wheaties, the best breakfast food in the land!
+            Have you tried Wheaties? They’re whole wheat with all of the bran. Won’t you try Wheaties? For wheat is the
+            best food of man. They’re crispy and crunchy the whole year through, The kiddies never tire of them and
+            neither will you. So just try Wheaties, the best breakfast food in the land!
         </div>
 
-        <!-- doctor data list -->
+        <!-- department data list -->
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
 
-            <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                <div class="border bg-white">
-                    <img :src="`/images/department/department-1.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                    <div class="ps-3 pt-3"> Department name</div>
-                    <div class="ps-3 py-3"> Description</div>
+            <div v-for="each in departmentDataList">
+                <div class="p-3">
+                    <a href="javascript:void(0)" class="text-decoration-none text-light-gray">
+                        <div class="border bg-white h-100">
+                            <img :src="each.filePath" class="img-fluid object-fit-cover w-100 hpx-250" :alt="`department `+each.id">
+                            <div class="px-3 pt-3 fw-medium text-theme">
+                                <div class="truncate-to-1-line">
+                                    {{each.name}}
+                                </div>
+                            </div>
+                            <div class="px-3 py-3">
+                                <div class="truncate-to-2-line">
+                                    {{each.description}}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
-
-            <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                <div class="border bg-white">
-                    <img :src="`/images/department/department-2.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                    <div class="ps-3 pt-3"> Department name</div>
-                    <div class="ps-3 py-3"> Description</div>
-                </div>
-            </a>
-
-            <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                <div class="border bg-white">
-                    <img :src="`/images/department/department-3.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                    <div class="ps-3 pt-3"> Department name</div>
-                    <div class="ps-3 py-3"> Description</div>
-                </div>
-            </a>
-
-            <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                <div class="border bg-white">
-                    <img :src="`/images/department/department-4.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                    <div class="ps-3 pt-3"> Department name</div>
-                    <div class="ps-3 py-3"> Description</div>
-                </div>
-            </a>
-
-            <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                <div class="border bg-white">
-                    <img :src="`/images/department/department-5.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                    <div class="ps-3 pt-3"> Department name</div>
-                    <div class="ps-3 py-3"> Description</div>
-                </div>
-            </a>
-
-            <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                <div class="border bg-white">
-                    <img :src="`/images/department/department-6.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                    <div class="ps-3 pt-3"> Department name</div>
-                    <div class="ps-3 py-3"> Description</div>
-                </div>
-            </a>
-
-            <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                <div class="border bg-white">
-                    <img :src="`/images/department/department-7.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                    <div class="ps-3 pt-3"> Department name</div>
-                    <div class="ps-3 py-3"> Description</div>
-                </div>
-            </a>
-
-            <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                <div class="border bg-white">
-                    <img :src="`/images/department/department-8.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                    <div class="ps-3 pt-3"> Department name</div>
-                    <div class="ps-3 py-3"> Description</div>
-                </div>
-            </a>
+            </div>
 
         </div>
     </div>
@@ -114,6 +72,16 @@ export default {
 
         return {
             imageUrl: '/images/breadcrumb.jpg',
+            departmentDataList: [
+                { id: '1', filePath: '/images/department/department-1.jpg', name: 'Department name', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
+                { id: '2', filePath: '/images/department/department-2.jpg', name: 'Department name', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
+                { id: '3', filePath: '/images/department/department-3.jpg', name: 'Department name', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
+                { id: '4', filePath: '/images/department/department-4.jpg', name: 'Department name', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
+                { id: '5', filePath: '/images/department/department-5.jpg', name: 'Department name', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
+                { id: '6', filePath: '/images/department/department-6.jpg', name: 'Department name', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
+                { id: '7', filePath: '/images/department/department-7.jpg', name: 'Department name', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
+                { id: '8', filePath: '/images/department/department-8.jpg', name: 'Department name', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
+            ],
         }
 
     },

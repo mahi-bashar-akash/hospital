@@ -31,7 +31,7 @@
         <div class="row">
             <div class="col-lg-8 text-light-gray">
                 <div class="mb-3">
-                    <div class="overflow-hidden w-100" style="height:500px;">
+                    <div class="overflow-hidden w-100 hpx-500">
                         <div id="g-mapdisplay" class="h-100 w-100">
                             <iframe class="w-100 h-100 border-0"
                                     src="https://www.google.com/maps/embed/v1/place?q=Dhanmondi+32+Road+Bridge,+Dhanmondi+Bridge,+Dhaka,+Bangladesh&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
