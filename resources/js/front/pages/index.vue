@@ -95,7 +95,7 @@
     <section class="w-100 bg-light">
         <div class="container py-5 text-light-gray">
             <div class="mb-3 text-center fw-medium fs-4">
-                Our doctor
+                Our doctors
             </div>
             <div class="mb-3 text-center">
                 Our doctors are specialized in their field and have more than 10 years of experiences.
@@ -239,7 +239,7 @@
     <section class="w-100">
         <div class="container py-5 text-light-gray">
             <div class="mb-3 text-center fw-medium fs-4">
-                Departments
+                Our departments
             </div>
             <div class="mb-3 text-center">
                 Latest up-to-date information from our public relation department.
