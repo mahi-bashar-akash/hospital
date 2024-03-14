@@ -103,35 +103,75 @@
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/doctor/doctor-1.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3"> Name </div>
-                        <div class="ps-3 pt-3"> Profession </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Dr. Natasha Isha
+                            </div>
+                        </div>
+                        <div class="px-3 pt-3 small">
+                            Pulmonary
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/doctor/doctor-2.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3"> Name </div>
-                        <div class="ps-3 pt-3"> Profession </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Dr. Sifa Chufi
+                            </div>
+                        </div>
+                        <div class="px-3 pt-3 small">
+                            Dental
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/doctor/doctor-3.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3"> Name </div>
-                        <div class="ps-3 pt-3"> Profession </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Dr. Adrofi Asfa
+                            </div>
+                        </div>
+                        <div class="px-3 pt-3 small">
+                            Neurologist
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/doctor/doctor-4.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3"> Name </div>
-                        <div class="ps-3 pt-3"> Profession </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Dr. Nando Aldo
+                            </div>
+                        </div>
+                        <div class="px-3 pt-3">
+                            Xray
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -176,33 +216,68 @@
             <div class="mb-3 text-center fw-semibold fs-4">
                 Our services
             </div>
+            <div class="mb-3 text-sm-center">
+                Latest up-to-date information from our services.
+            </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100 h-100">
                         <img :src="`/images/department/department-1.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-2.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-3.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-4.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -220,31 +295,63 @@
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-5.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-6.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-7.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-8.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px;" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -256,7 +363,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6"></div>
-                <div class="col-lg-6 bg-theme p-5 text-white">
+                <div class="col-lg-6 bg-primary p-5 text-white">
                     <div class="mb-3 fw-semibold fs-4">
                         Our philosophy
                     </div>
@@ -289,59 +396,123 @@
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-1.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-2.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-3.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-4.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-5.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-6.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-7.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray">
-                    <div class="border bg-white">
+                    <div class="border bg-white h-100">
                         <img :src="`/images/department/department-8.jpg`" class="img-fluid object-fit-cover w-100" style="height: 250px" alt="doctor">
-                        <div class="ps-3 pt-3"> Department name </div>
-                        <div class="ps-3 py-3"> Description </div>
+                        <div class="px-3 pt-3 fw-semibold text-theme">
+                            <div class="truncate-to-1-line">
+                                Department name
+                            </div>
+                        </div>
+                        <div class="px-3 py-3">
+                            <div class="truncate-to-2-line">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.
+                            </div>
+                        </div>
                     </div>
                 </a>
             </div>

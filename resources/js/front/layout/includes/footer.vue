@@ -4,9 +4,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-4 py-4 px-3">
-                    <div class="mb-3 fw-semibold text-white fs-5">
+                    <router-link :to="{name: 'home'}" class="mb-3 fw-semibold text-white fs-5">
                         Hospital <i class="ms-2 bi bi-plus-circle text-danger"></i>
-                    </div>
+                    </router-link>
                     <a href="javascript:void(0)" class="nav-link text-white mb-2">
                         © 2024 Hospital Plus.
                     </a>
@@ -32,35 +32,35 @@
                     <div class="mb-3 fw-semibold text-white fs-5">
                         Type of catalogue
                     </div>
-                    <a href="javascript:void(0)" class="nav-link text-white mb-2">
+                    <router-link :to="{name: 'blog'}" class="nav-link text-white mb-2">
                         Blog
-                    </a>
-                    <a href="javascript:void(0)" class="nav-link text-white mb-2">
+                    </router-link>
+                    <router-link :to="{name: 'service'}" class="nav-link text-white mb-2">
                         Service
-                    </a>
-                    <a href="javascript:void(0)" class="nav-link text-white mb-2">
+                    </router-link>
+                    <router-link :to="{name: 'event'}" class="nav-link text-white mb-2">
                         Event
-                    </a>
+                    </router-link>
                 </div>
                 <div class="col-md-6 col-lg-4 py-4 px-3">
                     <div class="mb-3 fw-semibold text-white fs-5">
                         Pages
                     </div>
-                    <a href="javascript:void(0)" class="nav-link text-white mb-2">
+                    <router-link :to="{name: 'appointment'}" class="nav-link text-white mb-2">
                         Book appointment
-                    </a>
+                    </router-link>
                     <a href="javascript:void(0)" class="nav-link text-white mb-2">
                         Terms & conditions
                     </a>
                     <a href="javascript:void(0)" class="nav-link text-white mb-2">
                         Privacy & policy
                     </a>
-                    <a href="javascript:void(0)" class="nav-link text-white mb-2">
+                    <router-link :to="{name: 'gallery'}" class="nav-link text-white mb-2">
                         Gallery
-                    </a>
-                    <a href="javascript:void(0)" class="nav-link text-white mb-2">
+                    </router-link>
+                    <router-link :to="{name: 'doctor'}" class="nav-link text-white mb-2">
                         Doctors
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>
