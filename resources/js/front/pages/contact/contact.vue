@@ -113,7 +113,7 @@
 
 <script>
 
-import SearchBlogTag from "../component/searchBlogTag.vue";
+import SearchBlogTag from "../../component/searchBlogTag.vue";
 
 export default {
 
