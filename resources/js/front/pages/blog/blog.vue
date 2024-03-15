@@ -37,16 +37,18 @@
 
                 <div class="py-4 border-bottom" v-for="each in blogDataList">
 
-                    <a href="javascript:void(0)" class="text-decoration-none text-light-gray w-100">
+                    <div class="text-light-gray w-100">
 
-                        <div class="fs-3 mb-3">
+                        <div class="fs-3 mb-3 text-theme">
                             {{each.title}}
                         </div>
 
-                        <div class="d-flex align-items-center mb-3 text-opacity-50 text-secondary small">
-                            <span class="me-2"> <i class="bi bi-calendar3 me-2"></i> {{each.date}} </span>
-                            <span class="me-2"> <i class="bi bi-person me-2"></i> {{each.author}} </span>
-                            <span class="me-2"> <i class="bi bi-tag me-2"></i> {{each.categoryType}} </span>
+                        <div class="ms-3">
+                            <div class="d-flex align-items-center mb-4 text-opacity-75 text-secondary small">
+                                <span class="me-3"> <i class="bi bi-calendar3 me-1"></i> {{each.date}} </span>
+                                <span class="me-3"> <i class="bi bi-person me-1"></i> {{each.author}} </span>
+                                <span> <i class="bi bi-tag me-2"></i> {{each.categoryType}} </span>
+                            </div>
                         </div>
 
                         <div class="mb-3">
@@ -59,11 +61,11 @@
                             </div>
                         </div>
 
-                        <button type="button" class="btn btn-theme-success px-4 py-2 rounded-1">
+                        <router-link :to="{ name: 'singleBlog' }" class="btn btn-theme-success px-4 py-2 rounded-1">
                             Learn more
-                        </button>
+                        </router-link>
 
-                    </a>
+                    </div>
 
                 </div>
 
