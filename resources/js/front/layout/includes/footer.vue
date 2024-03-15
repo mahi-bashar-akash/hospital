@@ -6,7 +6,7 @@
                 <div class="col-md-6 col-lg-4 py-4 px-3">
                     <div class="mb-3">
                         <router-link :to="{name: 'home'}" class="fw-semibold text-white fs-5 text-decoration-none">
-                            Hospital <i class="ms-2 bi bi-plus-circle text-danger"></i>
+                            Hospital
                         </router-link>
                     </div>
                     <div class="mb-2">

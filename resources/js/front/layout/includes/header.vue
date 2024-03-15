@@ -1,10 +1,10 @@
 <template>
 
-    <header class="w-100 bg-white sticky-top">
-        <nav class="navbar navbar-expand-lg py-3">
+    <header class="w-100 bg-white sticky-top header">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <router-link :to="{name: 'home'}" class="navbar-brand fw-bold text-light-gray">
-                    Hospital <i class="ms-1 bi bi-plus-circle text-danger"></i>
+                <router-link :to="{name: 'home'}" class="navbar-brand fw-bold text-theme">
+                    Hospital
                 </router-link>
                 <button class="navbar-toggler shadow-sm border-0" type="button" data-bs-toggle="collapse" @click="collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -87,7 +87,14 @@ export default {
 
     mounted() {
 
-
+        window.addEventListener('scroll',(e)=>{
+            const nav = document.querySelector('.header');
+            if(window.pageYOffset>0){
+                nav.classList.add("animated-shadow");
+            }else{
+                nav.classList.remove("animated-shadow");
+            }
+        });
 
     },
 
