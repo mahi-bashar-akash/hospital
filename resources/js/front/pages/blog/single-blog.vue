@@ -19,14 +19,14 @@
                 </router-link>
             </div>
             <div class="breadcrumb-item">
-                <router-link :to="{name: 'doctor'}" class="text-light-gray text-decoration-none">
+                <router-link :to="{name: 'blog'}" class="text-light-gray text-decoration-none">
                     Blogs
                 </router-link>
             </div>
             <div class="breadcrumb-item">
-                <router-link :to="{name: 'doctor'}" class="text-light-gray text-decoration-none">
+                <div class="text-light-gray text-decoration-none text-truncate">
                     Together we can do so much
-                </router-link>
+                </div>
             </div>
         </div>
 

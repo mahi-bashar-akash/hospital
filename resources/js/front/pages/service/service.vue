@@ -19,7 +19,7 @@
                 </router-link>
             </div>
             <div class="breadcrumb-item">
-                <router-link :to="{name: 'doctor'}" class="text-light-gray text-decoration-none">
+                <router-link :to="{name: 'service'}" class="text-light-gray text-decoration-none">
                     Services
                 </router-link>
             </div>

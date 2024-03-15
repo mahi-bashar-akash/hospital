@@ -24,9 +24,9 @@
                 </router-link>
             </div>
             <div class="breadcrumb-item">
-                <router-link :to="{name: 'doctor'}" class="text-light-gray text-decoration-none">
+                <div class="text-light-gray text-decoration-none fw-medium text-truncate">
                     Children’s Jakarta Hoops Fest
-                </router-link>
+                </div>
             </div>
         </div>
 
