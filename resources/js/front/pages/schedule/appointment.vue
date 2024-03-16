@@ -29,38 +29,45 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 pb-4">
+            <div class="col-lg-8 pb-4 text-light-gray">
 
-                <div class="py-4">
+                <div class="py-4 fw-medium">
                     You can use this form to book appointment with our doctor. Before booking any appointment make sure you have checked the doctor’s schedule.
                 </div>
 
-                <form action="">
+                <form autocomplete="off">
 
                     <div class="form-group mb-3">
-                        <label for="" class="form-label">Patient Name</label>
-                        <input type="text" name="" class="form-control" required autocomplete="new-">
+                        <label for="patient-name" class="form-label">Patient Name</label>
+                        <input id="patient-name" type="text" name="patient-name" class="form-control" required autocomplete="new-patient-name">
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="" class="form-label">Phone Number</label>
-                        <input type="text" name="" class="form-control" required autocomplete="new-">
+                        <label for="phone-number" class="form-label">Phone Number</label>
+                        <input id="phone-number" type="text" name="phone-number" class="form-control" required autocomplete="new-phone-number">
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="" class="form-label">Email Address</label>
-                        <input type="text" name="" class="form-control" required autocomplete="new-">
+                        <label for="email-address" class="form-label">Email Address</label>
+                        <input id="email-address" type="email" name="email-address" class="form-control" required autocomplete="new-email-address">
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="" class="form-label">Choose Date</label>
-                        <input type="text" name="" class="form-control" required autocomplete="new-">
+                        <label for="choose-date" class="form-label">Choose Date</label>
+                        <input id="choose-date" type="text" name="choose-date" class="form-control" required autocomplete="new-choose-date">
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="" class="form-label">Department</label>
-                        <select name="" class="form-select">
-                            <option value="">Select Department</option>
+                        <label for="choose-department" class="form-label">Department</label>
+                        <select id="choose-department" name="choose-department" class="form-select" required autocomplete="new-choose-department">
+                            <option value="0">Select Department</option>
+                            <option value="urology">Urology</option>
+                            <option value="dental">Dental</option>
+                            <option value="neurologist">Neurologist</option>
+                            <option value="pediatric">Pediatric</option>
+                            <option value="traumatology">Traumatology</option>
+                            <option value="xray">Xray</option>
+                            <option value="pulmonary">Pulmonary</option>
                         </select>
                     </div>
 

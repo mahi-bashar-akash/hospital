@@ -44,7 +44,7 @@
             <!-- doctor data list -->
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
-                <a href="javascript:void(0)" class="p-3 text-decoration-none text-light-gray" v-for="each in doctorDataList">
+                <router-link :to="{name: 'singleDoctor'}" class="p-3 text-decoration-none text-light-gray" v-for="each in doctorDataList">
                     <div class="border bg-white h-100">
                         <img :src="each.filePath" class="img-fluid object-fit-cover w-100 hpx-250" :alt="`doctor `+each.id">
                         <div class="px-3 pt-3 fw-medium text-theme">
@@ -61,7 +61,7 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                </router-link>
 
             </div>
 
