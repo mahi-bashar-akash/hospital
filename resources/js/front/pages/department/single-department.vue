@@ -99,7 +99,7 @@
         </div>
     </section>
 
-    <section class="w-100 mt-3 mt-md-5">
+    <section class="w-100 mt-3 mt-md-5 mb-4">
         <div class="container">
             <div class="mb-3 fs-4 fw-medium text-light-gray">Other Departments</div>
             <div class="other-department-carousel owl-carousel owl-theme">
