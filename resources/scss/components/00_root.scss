@@ -14,9 +14,11 @@
     --light-theme: rgba(114, 124, 245, 0.1);
     --font-family: "Roboto", sans-serif;
     --font-style-normal: normal;
+    --default-font-size: 14px;
 }
 
 body {
     font-family: var(--font-family) !important;
     font-style: var(--font-style-normal) !important;
+    font-size: var(--default-font-size) !important;
 }

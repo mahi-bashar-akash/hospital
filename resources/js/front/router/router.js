@@ -21,7 +21,6 @@ import singleBlog from "../pages/blog/single-blog.vue";
 import contact from "../pages/contact/contact.vue";
 import gallery from "../pages/gallery/gallery.vue";
 import appointment from "../pages/schedule/appointment.vue";
-import singleSchedule from "../pages/schedule/single-schedule.vue";
 import schedules from "../pages/schedule/schedules.vue";
 
 const title = window.core.APP_NAME
@@ -45,14 +44,23 @@ const routes = [
             { path: front_root_url + 'gallery', name: 'gallery', component: gallery, meta: { title: title + ' - gallery' } },
             { path: front_root_url + 'appointment', name: 'appointment', component: appointment, meta: { title: title + ' - appointment' } },
             { path: front_root_url + 'schedules', name: 'schedules', component: schedules, meta: { title: title + ' - schedules' } },
-            { path: front_root_url + 'schedules/single', name: 'singleSchedule', component: singleSchedule, meta: { title: title + ' - schedule' } },
         ]
     },
 ];
 
 const router = createRouter({
     history: createWebHistory(),
-    routes
+    routes,
+    scrollBehavior(to,from,savedPosition) {
+        if(to.hash) {
+            return {
+                el: to.hash,
+                behavior: 'smooth',
+            };
+        }else {
+            return { top: 0, behavior: 'smooth' };
+        }
+    }
 })
 
 export default router;

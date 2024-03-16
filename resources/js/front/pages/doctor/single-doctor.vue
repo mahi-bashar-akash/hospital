@@ -79,6 +79,11 @@
                             <i class="bi bi-youtube"></i>
                         </a>
                     </div>
+                    <div class="mt-5">
+                        <router-link :to="{name: 'schedules'}" class="btn btn-theme wpx-140 rounded-1">
+                            View schedule
+                        </router-link>
+                    </div>
                 </div>
                 <div class="col-lg-4 my-4">
                     <div class="bg-white text-light-gray">
@@ -144,7 +149,7 @@
                 <div v-for="each in doctorDataList">
                     <div class="item">
                         <div class="border p-0 h-100">
-                            <a href="javascript:void(0)" class="h-100 p-0 text-decoration-none">
+                            <router-link :to="{name: 'singleDoctor'}" class="h-100 p-0 text-decoration-none">
                                 <img :src="each.filePath" class="img-fluid w-100 object-fit-cover hpx-250"
                                      :alt="`banner `+ each.id">
                                 <div class="ps-3 py-2 fw-medium text-theme">
@@ -162,7 +167,7 @@
                                         {{ each.description }}
                                     </div>
                                 </div>
-                            </a>
+                            </router-link>
                         </div>
                     </div>
                 </div>

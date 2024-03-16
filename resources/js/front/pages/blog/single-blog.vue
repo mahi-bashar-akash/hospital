@@ -47,7 +47,7 @@
                     <div class="d-flex align-items-center mb-4 text-opacity-75 text-secondary small">
                         <span class="me-3"> <i class="bi bi-calendar3 me-1"></i> 01, Fri, 2023 </span>
                         <span class="me-3"> <i class="bi bi-person me-1"></i> Alber Izak </span>
-                        <span> <i class="bi bi-tag me-2"></i> Blogs </span>
+                        <span> <i class="bi bi-tag me-1"></i> Blogs </span>
                     </div>
                 </div>
 
@@ -218,7 +218,7 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-theme-success wpx-120">
+                            <button type="submit" class="btn btn-theme-success wpx-120 rounded-1">
                                 Submit
                             </button>
                         </div>

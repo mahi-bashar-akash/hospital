@@ -110,10 +110,10 @@
                                 {{each.name}}
                             </div>
                         </div>
-                        <div class="px-3 pt-3 small">
+                        <div class="px-3 pt-1 pb-3 small">
                             {{each.profession}}
                         </div>
-                        <div class="px-3 py-3">
+                        <div class="px-3 pb-3">
                             <div class="truncate-to-2-line">
                                 {{each.description}}
                             </div>

@@ -155,14 +155,14 @@
         </div>
     </section>
 
-    <section class="w-100">
+    <section class="w-100 mt-3 mt-md-5 mb-4">
         <div class="container">
             <div class="mb-3 fs-4 fw-medium text-light-gray">Related Events</div>
             <div class="related-carousel owl-carousel owl-theme">
                 <div v-for="each in eventDataList">
                     <div class="item">
                         <div class="border p-0">
-                            <a href="javascript:void(0)" class="h-100 p-0 text-decoration-none">
+                            <router-link :to="{name: 'singleEvent'}" class="h-100 p-0 text-decoration-none">
                                 <img :src="each.filePath" class="img-fluid w-100 object-fit-cover hpx-250" :alt="`banner `+ each.id">
                                 <div class="p-3 fw-medium text-theme">
                                     {{each.title}}
@@ -170,7 +170,7 @@
                                 <div class="p-3 pt-0 small text-secondary text-opacity-75">
                                     {{each.date}}
                                 </div>
-                            </a>
+                            </router-link>
                         </div>
                     </div>
                 </div>

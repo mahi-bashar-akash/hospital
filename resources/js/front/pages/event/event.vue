@@ -35,13 +35,13 @@
                     <div class="col-md-4 col-xl-3">
                         <!-- sort -->
                         <select name="sort" class="form-select" autocomplete="new-select-sort">
-                            <option value="">Select Option</option>
-                            <option value="">A - Z</option>
-                            <option value="">Z - A</option>
-                            <option value="">New</option>
-                            <option value="">Old</option>
-                            <option value="">Online available</option>
-                            <option value="">Coming soon</option>
+                            <option value="0">Select Option</option>
+                            <option value="a-z">A - Z</option>
+                            <option value="z-a">Z - A</option>
+                            <option value="new">New</option>
+                            <option value="old">Old</option>
+                            <option value="online-available">Online available</option>
+                            <option value="coming-soon">Coming soon</option>
                         </select>
                     </div>
                     <div class="col-md-4 col-xl-3">

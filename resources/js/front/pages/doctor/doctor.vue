@@ -84,7 +84,7 @@
                                 {{each.name}}
                             </div>
                         </div>
-                        <div class="px-3 py-1 small">
+                        <div class="px-3 pt-1 pb-3 small">
                             {{each.profession}}
                         </div>
                         <div class="px-3 pb-3">

@@ -106,7 +106,7 @@
                 <div v-for="each in serviceDataList">
                     <div class="item">
                         <div class="border p-0 h-100">
-                            <a href="javascript:void(0)" class="h-100 p-0 text-decoration-none">
+                            <router-link :to="{name: 'singleService'}" class="h-100 p-0 text-decoration-none">
                                 <img :src="each.filePath" class="img-fluid w-100 object-fit-cover hpx-250"
                                      :alt="`banner `+ each.id">
                                 <div class="p-3 fw-medium text-theme">
@@ -117,7 +117,7 @@
                                         {{ each.description }}
                                     </div>
                                 </div>
-                            </a>
+                            </router-link>
                         </div>
                     </div>
                 </div>
