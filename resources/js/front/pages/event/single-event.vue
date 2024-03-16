@@ -19,7 +19,7 @@
                 </router-link>
             </div>
             <div class="breadcrumb-item">
-                <router-link :to="{name: 'doctor'}" class="text-light-gray text-decoration-none">
+                <router-link :to="{name: 'event'}" class="text-light-gray text-decoration-none">
                     Events
                 </router-link>
             </div>
@@ -93,33 +93,41 @@
                     <div class="mt-3">
                         <img :src="`/images/blog/blog-1.jpg`" class="img-fluid w-100 object-fit-cover" alt="department">
                     </div>
+                    <hr class="border">
                     <div class="mt-3">
                         <span class="fw-medium">Date :</span>
                         Friday, 28 October 2016
                     </div>
+                    <hr class="border">
                     <div class="mt-3">
                         <span class="fw-medium">Time :</span>
                         12.00 - end
                     </div>
+                    <hr class="border">
                     <div class="mt-3">
                         <span class="fw-medium">Location :</span>
                         Jalan Kintamani Raya No.2, Kawasan Daan Mogot Baru, Daerah Khusus Ibukota Jakarta
                     </div>
+                    <hr class="border">
                     <div class="mt-3">
                         <span class="fw-medium">Organizer :</span>
                         Hermina Events
                     </div>
+                    <hr class="border">
                     <div class="mt-3">
                         <span class="fw-medium">Phone :</span>
                         021 5343 6546
                     </div>
+                    <hr class="border">
                     <div class="mt-3">
                         <span class="fw-medium">Email :</span>
                         events@hospitalplus.com
                     </div>
+                    <hr class="border">
                     <div class="mt-3">
                         <div class="fw-medium d-block">SHARE THIS EVENT</div>
                     </div>
+                    <hr class="border">
                     <div class="mt-3 d-flex align-items-center">
                         <a href="javascript:void(0)" class="text-secondary text-opacity-75 text-decoration-none me-3">
                             <i class="bi bi-facebook"></i>
@@ -145,6 +153,29 @@
         </div>
     </div>
 
+    <section class="w-100">
+        <div class="container">
+            <div class="mb-3 fs-4 fw-medium text-light-gray">Related Events</div>
+            <div class="related-carousel owl-carousel owl-theme">
+                <div v-for="each in eventDataList">
+                    <div class="item">
+                        <div class="border p-0">
+                            <a href="javascript:void(0)" class="h-100 p-0 text-decoration-none">
+                                <img :src="each.filePath" class="img-fluid w-100 object-fit-cover hpx-250" :alt="`banner `+ each.id">
+                                <div class="p-3 fw-medium text-theme">
+                                    {{each.title}}
+                                </div>
+                                <div class="p-3 pt-0 small text-secondary text-opacity-75">
+                                    {{each.date}}
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </template>
 
 <script>
@@ -153,11 +184,47 @@ export default {
     data() {
         return {
             imageUrl: '/images/breadcrumb.jpg',
+            eventDataList: [
+                { id: '1', filePath: '/images/department/department-1.jpg', title: 'Staying Healthy As You Age', date: 'January 26, 2015' },
+                { id: '2', filePath: '/images/department/department-2.jpg', title: 'Children’s Jakarta Hoops Fest', date: 'January 26, 2015' },
+                { id: '3', filePath: '/images/department/department-3.jpg', title: 'Happiest Baby on the Block', date: 'January 26, 2015' },
+                { id: '4', filePath: '/images/department/department-4.jpg', title: 'Parenting Workshop', date: 'January 26, 2015' },
+                { id: '5', filePath: '/images/department/department-5.jpg', title: 'Fresh goes better in life', date: 'January 26, 2015' },
+                { id: '6', filePath: '/images/department/department-6.jpg', title: 'Come and knock on our...', date: 'January 26, 2015' },
+                { id: '7', filePath: '/images/department/department-7.jpg', title: 'Come and knock on our...', date: 'January 26, 2015' },
+                { id: '8', filePath: '/images/department/department-8.jpg', title: 'There’s something special about this...', date: 'January 26, 2015' },
+            ],
         }
     },
     mounted() {
+        this.relatedEventCarousel();
     },
-    methods: {}
+    methods: {
+
+        /* Function to control related carousel */
+        relatedEventCarousel() {
+            $('.related-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:4
+                    }
+                }
+            })
+        },
+
+
+    }
 }
 
 </script>
