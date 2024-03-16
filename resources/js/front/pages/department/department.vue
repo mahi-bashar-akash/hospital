@@ -41,7 +41,7 @@
 
             <div v-for="each in departmentDataList">
                 <div class="p-3">
-                    <a href="javascript:void(0)" class="text-decoration-none text-light-gray">
+                    <router-link :to="{name: 'singleDepartment'}" class="text-decoration-none text-light-gray">
                         <div class="border bg-white h-100">
                             <img :src="each.filePath" class="img-fluid object-fit-cover w-100 hpx-250" :alt="`department `+each.id">
                             <div class="px-3 pt-3 fw-medium text-theme">
@@ -55,7 +55,7 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </router-link>
                 </div>
             </div>
 
