@@ -29,11 +29,32 @@
 
     <div class="container py-5">
 
-        <!-- description -->
-        <div class="mb-4 text-light-gray">
-            Have you tried Wheaties? They’re whole wheat with all of the bran. Won’t you try Wheaties? For wheat is the
-            best food of man. They’re crispy and crunchy the whole year through, The kiddies never tire of them and
-            neither will you. So just try Wheaties, the best breakfast food in the land!
+        <div class="row mb-3">
+            <div class="col-lg-12">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 col-xl-3">
+                        <!-- sort -->
+                        <select name="sort" class="form-select" autocomplete="new-select-sort">
+                            <option value="">Select Option</option>
+                            <option value="">A - Z</option>
+                            <option value="">Z - A</option>
+                            <option value="">New</option>
+                            <option value="">Old</option>
+                            <option value="">Online available</option>
+                            <option value="">Coming soon</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-xl-3">
+                        <!-- search -->
+                        <div class="position-relative">
+                            <input type="text" name="keyword" class="form-control ps-5" required autocomplete="new-search-here" placeholder="Search here">
+                            <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
+                                <i class="bi bi-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- department data list -->
