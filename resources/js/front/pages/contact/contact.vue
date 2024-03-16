@@ -33,8 +33,7 @@
                 <div class="mb-3">
                     <div class="overflow-hidden w-100 hpx-500">
                         <div id="g-mapdisplay" class="h-100 w-100">
-                            <iframe class="w-100 h-100 border-0"
-                                    src="https://www.google.com/maps/embed/v1/place?q=Dhanmondi+32+Road+Bridge,+Dhanmondi+Bridge,+Dhaka,+Bangladesh&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                            <iframe class="w-100 h-100 border-0" src="https://www.google.com/maps/embed/v1/place?q=Dhanmondi+32+Road+Bridge,+Dhanmondi+Bridge,+Dhaka,+Bangladesh&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                         </div>
                     </div>
                 </div>
@@ -44,25 +43,21 @@
                             <form action="">
                                 <div class="mb-3">
                                     <label for="full_name" class="form-label">Full name</label>
-                                    <input id="full_name" type="text" name="" class="form-control" required
-                                           autocomplete="new-full-name">
+                                    <input id="full_name" type="text" name="" class="form-control" required autocomplete="new-full-name">
                                 </div>
                                 <div class="mb-3">
                                     <label for="email_address" class="form-label">Email address</label>
-                                    <input id="email_address" type="email" name="email" class="form-control" required
-                                           autocomplete="new-email">
+                                    <input id="email_address" type="email" name="email" class="form-control" required autocomplete="new-email">
                                 </div>
                                 <div class="mb-3">
                                     <label for="phone-number" class="form-label">phone number</label>
-                                    <input id="phone-number" type="text" name="phone" class="form-control" required
-                                           autocomplete="new-phone-number">
+                                    <input id="phone-number" type="text" name="phone" class="form-control" required autocomplete="new-phone-number">
                                 </div>
                                 <div class="mb-3">
                                     <label for="message" class="form-label">Message</label>
-                                    <textarea id="message" name="message" class="form-textarea" cols="30" rows="5"
-                                              required autocomplete="new-message"></textarea>
+                                    <textarea id="message" name="message" class="form-textarea" cols="30" rows="5" required autocomplete="new-message"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-theme-danger px-5">
+                                <button type="submit" class="btn btn-theme-danger wpx-140 rounded-1">
                                     Submit
                                 </button>
                             </form>

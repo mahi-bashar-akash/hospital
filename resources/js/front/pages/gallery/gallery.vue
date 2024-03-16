@@ -29,14 +29,46 @@
 
     <div class="container py-5">
 
-        <!-- filter -->
-        <div class="d-flex align-items-center justify-content-md-center">
-            <button type="button" class="btn rounded-0 px-3 btn-category active">
-                All
-            </button>
-            <button type="button" class="btn rounded-0 px-3 btn-category" v-for="each in category">
-                {{each.category}}
-            </button>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- sort -->
+                        <select name="sort" class="form-select" autocomplete="new-select-sort">
+                            <option value="">Select Option</option>
+                            <option value="">A - Z</option>
+                            <option value="">Z - A</option>
+                            <option value="">New</option>
+                            <option value="">Old</option>
+                            <option value="">Online available</option>
+                            <option value="">Coming soon</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- search -->
+                        <div class="position-relative">
+                            <input type="text" name="keyword" class="form-control ps-5" required autocomplete="new-search-here" placeholder="Search here">
+                            <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
+                                <i class="bi bi-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-md-6">
+
+                    </div>
+                    <div class="col-md-6">
+                        <!-- filter -->
+                        <select name="category" class="form-select" required autocomplete="new-category">
+                            <option value="all">All</option>
+                            <option v-for="each in category" :value="each.category">{{each.category}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="mt-4">
@@ -59,6 +91,37 @@
                 </a>
 
             </div>
+
+            <!-- pagination -->
+            <nav aria-label="Page navigation example" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)">
+                            <i class="bi bi-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)">
+                            1
+                        </a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="javascript:void(0)">
+                            2
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)">
+                            3
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)">
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
         </div>
 
