@@ -335,10 +335,10 @@ export default {
                 loop: true,
                 margin: 10,
                 nav: false,
-                dots: false,
+                dots: true,
                 autoplay: true,
-                autoplaySpeed: 4000,
                 animateOut: 'fadeOut',
+                autoplaySpeed: 4000,
                 responsive:{
                     0:{
                         items:1

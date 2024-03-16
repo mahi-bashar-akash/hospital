@@ -1,7 +1,7 @@
 <template>
 
     <header class="w-100 bg-white sticky-top header">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg py-1">
             <div class="container">
                 <router-link :to="{name: 'home'}" class="navbar-brand fw-bold text-theme">
                     Hospital
