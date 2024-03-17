@@ -36,199 +36,36 @@
 
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4">
 
-        <!-- 01 - box -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-header border-0 py-3">
-                    <div class="fw-medium text-light-gray">
-                        Powerful Theme Options
-                    </div>
-                </div>
-                <div class="card-body border-0">
-                    <div class="mb-3 text-center">
-                        <i class="bi bi-sliders2-vertical fs-2 text-danger"></i>
-                    </div>
-                    <div class="text-light-gray">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+        <!-- box -->
+        <div v-for="each in boxDataList">
+            <div class="pb-3">
+                <div class="card border-0">
+                    <div class="card-header border-0 py-3">
+                        <div class="fw-medium text-light-gray">
+                            {{each.title}}
                         </div>
                     </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageBoxOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteBoxOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 02 - box -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-header border-0 py-3">
-                    <div class="fw-medium text-light-gray">
-                        Drag & Drop Page Builder
-                    </div>
-                </div>
-                <div class="card-body border-0">
-                    <div class="mb-3 text-center">
-                        <i class="bi bi-window-fullscreen fs-2 text-danger"></i>
-                    </div>
-                    <div class="text-light-gray">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                    <div class="card-body border-0">
+                        <div class="mb-3 text-center">
+                            <i :class="`bi `+each.svgImage+` fs-2 text-danger`"></i>
+                        </div>
+                        <div class="text-light-gray">
+                            <div class="truncate-to-2-line">
+                                {{each.description}}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageBoxOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteBoxOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 03 - box -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-header border-0 py-3">
-                    <div class="fw-medium text-light-gray">
-                        Easy to Customize
-                    </div>
-                </div>
-                <div class="card-body border-0">
-                    <div class="mb-3 text-center">
-                        <i class="bi bi-pencil fs-2 text-danger"></i>
-                    </div>
-                    <div class="text-light-gray">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                    <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
+                        <div class="col-6 pe-1">
+                            <button type="button" class="btn btn-outline-theme w-100" @click="manageBoxOpen">
+                                Edit
+                            </button>
                         </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageBoxOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteBoxOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 04 - box -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-header border-0 py-3">
-                    <div class="fw-medium text-light-gray">
-                        Theme Documentation
-                    </div>
-                </div>
-                <div class="card-body border-0">
-                    <div class="mb-3 text-center">
-                        <i class="bi bi-journal-text fs-2 text-danger"></i>
-                    </div>
-                    <div class="text-light-gray">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                        <div class="col-6 ps-1">
+                            <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteBoxOpen">
+                                Delete
+                            </button>
                         </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageBoxOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteBoxOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 05 - box -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-header border-0 py-3">
-                    <div class="fw-medium text-light-gray">
-                        Years of Experience
-                    </div>
-                </div>
-                <div class="card-body border-0">
-                    <div class="mb-3 text-center">
-                        <i class="bi bi-calendar3 fs-2 text-danger"></i>
-                    </div>
-                    <div class="text-light-gray">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageBoxOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteBoxOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 06 - box -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-header border-0 py-3">
-                    <div class="fw-medium text-light-gray">
-                        Responsive Layout
-                    </div>
-                </div>
-                <div class="card-body border-0">
-                    <div class="mb-3 text-center">
-                        <i class="bi bi-layout-sidebar fs-2 text-danger"></i>
-                    </div>
-                    <div class="text-light-gray">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageBoxOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteBoxOpen">
-                            Delete
-                        </button>
                     </div>
                 </div>
             </div>
@@ -330,7 +167,16 @@
 export default {
 
     data() {
-        return {  }
+        return {
+            boxDataList: [
+                { id: '1', title: 'Powerful Theme Options', svgImage: 'bi-sliders2-vertical', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard.' },
+                { id: '2', title: 'Drag & Drop Page Builder', svgImage: 'bi-window-fullscreen', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard.' },
+                { id: '3', title: 'Easy to Customize', svgImage: 'bi-pencil', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard.' },
+                { id: '4', title: 'Theme Documentation', svgImage: 'bi-journal-text', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard.' },
+                { id: '5', title: 'Years of Experience', svgImage: 'bi-calendar3', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard.' },
+                { id: '6', title: 'Responsive Layout', svgImage: 'bi-layout-sidebar', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard.' },
+            ]
+        }
     },
 
     mounted() {  },

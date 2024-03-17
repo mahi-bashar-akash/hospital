@@ -36,249 +36,34 @@
 
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4">
 
-        <!-- 01 - service -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/department/department-1.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-200" alt="service">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Department name
+        <!-- service -->
+        <div v-for="each in serviceDataList">
+            <div class="pb-3">
+                <div class="card border-0">
+                    <div class="card-body border-0">
+                        <img :src="each.filePath" class="img-fluid w-100 object-fit-cover rounded-1 hpx-200" alt="service">
+                        <div class="pt-3 fw-medium text-theme">
+                            <div class="truncate-to-1-line">
+                                {{each.department}}
+                            </div>
+                        </div>
+                        <div class="pt-3 text-light-gray">
+                            <div class="truncate-to-2-line">
+                                {{each.description}}
+                            </div>
                         </div>
                     </div>
-                    <div class="pt-3">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                    <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
+                        <div class="col-6 pe-1">
+                            <button type="button" class="btn btn-outline-theme w-100" @click="manageServiceOpen">
+                                Edit
+                            </button>
                         </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageServiceOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteServiceOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 02 - service -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/department/department-2.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-200" alt="service">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Department name
+                        <div class="col-6 ps-1">
+                            <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteServiceOpen">
+                                Delete
+                            </button>
                         </div>
-                    </div>
-                    <div class="pt-3">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageServiceOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteServiceOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 03 - service -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/department/department-3.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-200" alt="service">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageServiceOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteServiceOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 04 - service -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/department/department-4.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-200" alt="service">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageServiceOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteServiceOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 05 - service -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/department/department-5.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-200" alt="service">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageServiceOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteServiceOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 06 - service -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/department/department-6.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-200" alt="service">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageServiceOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteServiceOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 07 - service -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/department/department-7.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-200" alt="service">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageServiceOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteServiceOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 08 - service -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/department/department-8.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-200" alt="service">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageServiceOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteServiceOpen">
-                            Delete
-                        </button>
                     </div>
                 </div>
             </div>
@@ -383,6 +168,16 @@ export default {
     data() {
 
         return {
+            serviceDataList: [
+                { id: '1', filePath: '/images/department/department-1.jpg', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '2', filePath: '/images/department/department-2.jpg', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '3', filePath: '/images/department/department-3.jpg', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '4', filePath: '/images/department/department-4.jpg', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '5', filePath: '/images/department/department-5.jpg', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '6', filePath: '/images/department/department-6.jpg', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '7', filePath: '/images/department/department-7.jpg', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '8', filePath: '/images/department/department-8.jpg', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+            ],
             category: [
                 { id: '1', name: 'Cardiology' },
                 { id: '2', name: 'Dental' },

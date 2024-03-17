@@ -36,577 +36,39 @@
 
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4">
 
-        <!-- 01 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-1.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
+        <!-- doctor -->
+        <div v-for="each in doctorDataList">
+            <div class="pb-3">
+                <div class="card border-0">
+                    <div class="card-body border-0">
+                        <img :src="each.filePath" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
+                        <div class="pt-3 fw-medium text-theme">
+                            <div class="truncate-to-1-line">
+                                {{each.name}}
+                            </div>
+                        </div>
+                        <div class="mt-1 text-secondary text-opacity-75">
+                            <div class="truncate-to-1-line">
+                                {{each.department}}
+                            </div>
+                        </div>
+                        <div class="pt-2 text-light-gray">
+                            <div class="truncate-to-2-line">
+                                {{each.description}}
+                            </div>
                         </div>
                     </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
+                    <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
+                        <div class="col-6 pe-1">
+                            <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
+                                Edit
+                            </button>
                         </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                        <div class="col-6 ps-1">
+                            <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
+                                Delete
+                            </button>
                         </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 02 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-2.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 03 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-3.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 04 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-4.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 05 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-5.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 06 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-6.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 07 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-7.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 08 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-8.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 09 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-9.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 10 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-10.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 11 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-11.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 12 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-12.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 13 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-13.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 14 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-14.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 15 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-15.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 16 - doctor -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0">
-                    <img :src="`/images/doctor/doctor-16.jpg`" class="img-fluid w-100 object-fit-cover rounded-1 hpx-250" alt="doctor">
-                    <div class="pt-3 fw-medium text-theme">
-                        <div class="truncate-to-1-line">
-                            Doctor name
-                        </div>
-                    </div>
-                    <div class="mt-1 text-secondary text-opacity-75">
-                        <div class="truncate-to-1-line">
-                            Department name
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <div class="truncate-to-2-line">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageDoctorOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteDoctorOpen">
-                            Delete
-                        </button>
                     </div>
                 </div>
             </div>
@@ -686,123 +148,115 @@
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="saturday" class="form-label">Saturday</label>
+                        <label for="saturday" class="form-label d-flex align-items-center">
+                            <input id="saturday" type="checkbox" name="saturday" class="form-checkbox">
+                            Saturday
+                        </label>
                         <div class="row">
                             <div class="col-md-6">
                                 <select name="time" id="saturday" autocomplete="new-start-time" class="form-select">
-                                    <option value="">01:00</option>
-                                    <option value="">01:30</option>
-                                    <option value="">02:00</option>
-                                    <option value="">02:30</option>
-                                    <option value="">03:00</option>
-                                    <option value="">03:30</option>
-                                    <option value="">04:00</option>
-                                    <option value="">04:30</option>
-                                    <option value="">05:00</option>
-                                    <option value="">05:30</option>
-                                    <option value="">06:00</option>
-                                    <option value="">06:30</option>
-                                    <option value="">07:00</option>
-                                    <option value="">07:30</option>
-                                    <option value="">08:00</option>
-                                    <option value="">08:30</option>
-                                    <option value="">09:00</option>
-                                    <option value="">09:30</option>
-                                    <option value="">10:00</option>
-                                    <option value="">10:30</option>
-                                    <option value="">11:00</option>
-                                    <option value="">11:30</option>
-                                    <option value="">12:00</option>
-                                    <option value="">12:30</option>
+                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
                                 <select name="time" id="saturday" autocomplete="new-end-time" class="form-select">
-                                    <option value="">01:00</option>
-                                    <option value="">01:30</option>
-                                    <option value="">02:00</option>
-                                    <option value="">02:30</option>
-                                    <option value="">03:00</option>
-                                    <option value="">03:30</option>
-                                    <option value="">04:00</option>
-                                    <option value="">04:30</option>
-                                    <option value="">05:00</option>
-                                    <option value="">05:30</option>
-                                    <option value="">06:00</option>
-                                    <option value="">06:30</option>
-                                    <option value="">07:00</option>
-                                    <option value="">07:30</option>
-                                    <option value="">08:00</option>
-                                    <option value="">08:30</option>
-                                    <option value="">09:00</option>
-                                    <option value="">09:30</option>
-                                    <option value="">10:00</option>
-                                    <option value="">10:30</option>
-                                    <option value="">11:00</option>
-                                    <option value="">11:30</option>
-                                    <option value="">12:00</option>
-                                    <option value="">12:30</option>
+                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
                                 </select>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="sunday" class="form-label">Sunday</label>
+                        <label for="sunday" class="form-label d-flex align-items-center">
+                            <input id="sunday" type="checkbox" name="sunday" class="form-checkbox">
+                            Sunday
+                        </label>
                         <div class="row">
                             <div class="col-md-6">
-                                <input id="sunday" type="text" name="day" class="form-control" required autocomplete="new-day">
+                                <select name="time" id="sunday" autocomplete="new-start-time" class="form-select">
+                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
+                                </select>
                             </div>
                             <div class="col-md-6">
-                                <input id="sunday" type="text" name="time" class="form-control" required autocomplete="new-time">
+                                <select name="time" id="sunday" autocomplete="new-end-time" class="form-select">
+                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
+                                </select>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="monday" class="form-label">Monday</label>
+                        <label for="monday" class="form-label d-flex align-items-center">
+                            <input id="monday" type="checkbox" name="monday" class="form-checkbox">
+                            Monday
+                        </label>
                         <div class="row">
                             <div class="col-md-6">
-                                <input id="monday" type="text" name="day" class="form-control" required autocomplete="new-day">
+                                <select name="time" id="monday" autocomplete="new-start-time" class="form-select">
+                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
+                                </select>
                             </div>
                             <div class="col-md-6">
-                                <input id="monday" type="text" name="time" class="form-control" required autocomplete="new-time">
+                                <select name="time" id="monday" autocomplete="new-end-time" class="form-select">
+                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
+                                </select>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="tuesday" class="form-label">Tuesday</label>
+                        <label for="tuesday" class="form-label d-flex align-items-center">
+                            <input id="tuesday" type="checkbox" name="tuesday" class="form-checkbox">
+                            Tuesday
+                        </label>
                         <div class="row">
                             <div class="col-md-6">
-                                <input id="tuesday" type="text" name="day" class="form-control" required autocomplete="new-day">
+                                <select name="time" id="tuesday" autocomplete="new-start-time" class="form-select">
+                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
+                                </select>
                             </div>
                             <div class="col-md-6">
-                                <input id="tuesday" type="text" name="time" class="form-control" required autocomplete="new-time">
+                                <select name="time" id="tuesday" autocomplete="new-end-time" class="form-select">
+                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
+                                </select>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="wednesday" class="form-label">Wednesday</label>
+                        <label for="wednesday" class="form-label d-flex align-items-center">
+                            <input id="wednesday" type="checkbox" name="wednesday" class="form-checkbox">
+                            Wednesday
+                        </label>
                         <div class="row">
                             <div class="col-md-6">
-                                <input id="wednesday" type="text" name="day" class="form-control" required autocomplete="new-day">
+                                <select name="time" id="wednesday" autocomplete="new-start-time" class="form-select">
+                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
+                                </select>
                             </div>
                             <div class="col-md-6">
-                                <input id="wednesday" type="text" name="time" class="form-control" required autocomplete="new-time">
+                                <select name="time" id="wednesday" autocomplete="new-end-time" class="form-select">
+                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
+                                </select>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="thursday" class="form-label">Thursday</label>
+                        <label for="thursday" class="form-label d-flex align-items-center">
+                            <input id="thursday" type="checkbox" name="thursday" class="form-checkbox">
+                            Thursday
+                        </label>
                         <div class="row">
                             <div class="col-md-6">
-                                <input id="thursday" type="text" name="day" class="form-control" required autocomplete="new-day">
+                                <select name="time" id="thursday" autocomplete="new-start-time" class="form-select">
+                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
+                                </select>
                             </div>
                             <div class="col-md-6">
-                                <input id="thursday" type="text" name="time" class="form-control" required autocomplete="new-time">
+                                <select name="time" id="thursday" autocomplete="new-end-time" class="form-select">
+                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -886,6 +340,24 @@ export default {
     data() {
 
         return {
+            doctorDataList: [
+                { id: '1', filePath: '/images/doctor/doctor-1.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '2', filePath: '/images/doctor/doctor-2.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '3', filePath: '/images/doctor/doctor-3.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '4', filePath: '/images/doctor/doctor-4.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '5', filePath: '/images/doctor/doctor-5.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '6', filePath: '/images/doctor/doctor-6.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '7', filePath: '/images/doctor/doctor-7.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '8', filePath: '/images/doctor/doctor-8.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '9', filePath: '/images/doctor/doctor-9.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '10', filePath: '/images/doctor/doctor-10.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '11', filePath: '/images/doctor/doctor-11.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '12', filePath: '/images/doctor/doctor-12.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '13', filePath: '/images/doctor/doctor-13.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '14', filePath: '/images/doctor/doctor-14.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '15', filePath: '/images/doctor/doctor-15.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+                { id: '16', filePath: '/images/doctor/doctor-16.jpg', name: 'Doctor name', department: 'department name', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' },
+            ],
             category: [
                 { id: '1', name: 'Cardiology' },
                 { id: '2', name: 'Dental' },
@@ -895,6 +367,32 @@ export default {
                 { id: '6', name: 'Traumatology' },
                 { id: '7', name: 'Urology' },
                 { id: '8', name: 'Xray' },
+            ],
+            timeData: [
+                { id: '1', time: '01:00' },
+                { id: '2', time: '01:30' },
+                { id: '3', time: '02:00' },
+                { id: '4', time: '02:30' },
+                { id: '5', time: '03:00' },
+                { id: '6', time: '03:30' },
+                { id: '7', time: '04:00' },
+                { id: '8', time: '04:30' },
+                { id: '9', time: '05:00' },
+                { id: '10', time: '05:30' },
+                { id: '11', time: '06:00' },
+                { id: '12', time: '06:30' },
+                { id: '13', time: '07:00' },
+                { id: '14', time: '07:30' },
+                { id: '15', time: '08:00' },
+                { id: '16', time: '08:30' },
+                { id: '17', time: '09:00' },
+                { id: '18', time: '09:30' },
+                { id: '19', time: '10:00' },
+                { id: '20', time: '10:30' },
+                { id: '21', time: '11:00' },
+                { id: '22', time: '11:30' },
+                { id: '23', time: '12:00' },
+                { id: '24', time: '12:30' },
             ],
         }
 

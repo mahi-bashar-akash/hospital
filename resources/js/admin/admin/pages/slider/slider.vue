@@ -35,65 +35,35 @@
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-2 row-cols-xxl-4">
 
-        <!-- 01 - slider -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0 p-2">
-                    <img :src="`/images/slider-1.jpg`" class="img-fluid object-fit-cover w-100 hpx-200 rounded-2" alt="banner 1">
-                    <div class="mt-3 fw-medium text-theme">
-                        Title
-                    </div>
-                    <div class="mt-1 text-light-gray">
-                        SubTitle
-                    </div>
-                    <div class="mt-2 text-light-gray">
-                        <div class="truncate-to-2-line">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laudantium molestiae nobis, perferendis repudiandae sit.
+        <!-- slider -->
+        <div v-for="each in slideDataList">
+            <div class="p-3">
+                <div class="card border-0">
+                    <div class="card-body border-0 p-2">
+                        <img :src="each.filePath" class="img-fluid object-fit-cover w-100 hpx-200 rounded-2" alt="banner 1">
+                        <div class="mt-3 fw-medium text-theme">
+                            {{each.title}}
+                        </div>
+                        <div class="mt-1 text-light-gray">
+                            {{each.subTitle}}
+                        </div>
+                        <div class="mt-2 text-light-gray">
+                            <div class="truncate-to-2-line">
+                                {{each.description}}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-footer border-0 d-flex justify-content-between bg-white p-2">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageSliderOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteSliderOpen">
-                            Delete
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 02 - slider -->
-        <div class="p-3">
-            <div class="card border-0">
-                <div class="card-body border-0 p-2">
-                    <img :src="`/images/slider-2.jpg`" class="img-fluid object-fit-cover w-100 hpx-200 rounded-2" alt="banner 1">
-                    <div class="mt-3 fw-medium text-theme">
-                        Title
-                    </div>
-                    <div class="mt-1 text-light-gray">
-                        SubTitle
-                    </div>
-                    <div class="mt-2 text-light-gray">
-                        <div class="truncate-to-2-line">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laudantium molestiae nobis, perferendis repudiandae sit.
+                    <div class="card-footer border-0 d-flex justify-content-between bg-white p-2">
+                        <div class="col-6 pe-1">
+                            <button type="button" class="btn btn-outline-theme w-100" @click="manageSliderOpen">
+                                Edit
+                            </button>
                         </div>
-                    </div>
-                </div>
-                <div class="card-footer border-0 d-flex justify-content-between bg-white p-2">
-                    <div class="col-6 pe-1">
-                        <button type="button" class="btn btn-outline-theme w-100" @click="manageSliderOpen">
-                            Edit
-                        </button>
-                    </div>
-                    <div class="col-6 ps-1">
-                        <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteSliderOpen">
-                            Delete
-                        </button>
+                        <div class="col-6 ps-1">
+                            <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteSliderOpen">
+                                Delete
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,18 +92,18 @@
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="first-line" class="form-label">First line</label>
-                        <input id="first-line" type="text" name="first-line" class="form-control" required autocomplete="new-first-line">
+                        <label for="title" class="form-label">Title</label>
+                        <input id="title" type="text" name="title" class="form-control" required autocomplete="new-title">
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="second-line" class="form-label">Second line</label>
-                        <input id="second-line" type="text" name="second-line" class="form-control" required autocomplete="new-second-line">
+                        <label for="sub-title" class="form-label">Sub title</label>
+                        <input id="sub-title" type="text" name="sub-title" class="form-control" required autocomplete="new-sub-title">
                     </div>
 
                     <div class="form-group">
-                        <label for="third-line" class="form-label">Third line</label>
-                        <input id="third-line" type="text" name="third-line" class="form-control" required autocomplete="new-third-line">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea name="description" id="description" cols="30" rows="5" class="form-textarea" required autocomplete="new-description"></textarea>
                     </div>
 
                 </div>
@@ -200,7 +170,12 @@
 export default {
 
     data() {
-        return {  }
+        return {
+            slideDataList: [
+                { id: '1', filePath: '/images/slider-1.jpg', title: 'Title', subTitle: 'sub title', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laudantium molestiae nobis, perferendis repudiandae sit.' },
+                { id: '2', filePath: '/images/slider-2.jpg', title: 'Title', subTitle: 'sub title', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laudantium molestiae nobis, perferendis repudiandae sit.' },
+            ]
+        }
     },
 
     mounted() {  },
