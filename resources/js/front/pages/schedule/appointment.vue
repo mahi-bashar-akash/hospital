@@ -71,7 +71,7 @@
                         </select>
                     </div>
 
-                    <button type="submit" class="btn btn-theme-danger wpx-140 rounded-1">
+                    <button type="submit" class="btn btn-theme-danger">
                         Submit
                     </button>
 

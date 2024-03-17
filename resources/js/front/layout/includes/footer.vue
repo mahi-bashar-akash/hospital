@@ -23,15 +23,15 @@
                         TAGS
                     </div>
                     <div class="d-flex justify-content-start align-items-center flex-wrap">
-                        <button type="button" class="btn btn-outline-light px-2 py-1 m-1"> Beach </button>
-                        <button type="button" class="btn btn-outline-light px-2 py-1 m-1"> Health </button>
-                        <button type="button" class="btn btn-outline-light px-2 py-1 m-1"> holiday </button>
-                        <button type="button" class="btn btn-outline-light px-2 py-1 m-1"> information </button>
-                        <button type="button" class="btn btn-outline-light px-2 py-1 m-1"> kids </button>
-                        <button type="button" class="btn btn-outline-light px-2 py-1 m-1"> Music </button>
-                        <button type="button" class="btn btn-outline-light px-2 py-1 m-1"> Nature </button>
-                        <button type="button" class="btn btn-outline-light px-2 py-1 m-1"> Random Stuff </button>
-                        <button type="button" class="btn btn-outline-light px-2 py-1 m-1"> Rock </button>
+                        <button type="button" class="btn btn-outline-light m-1"> Beach </button>
+                        <button type="button" class="btn btn-outline-light m-1"> Health </button>
+                        <button type="button" class="btn btn-outline-light m-1"> holiday </button>
+                        <button type="button" class="btn btn-outline-light m-1"> information </button>
+                        <button type="button" class="btn btn-outline-light m-1"> kids </button>
+                        <button type="button" class="btn btn-outline-light m-1"> Music </button>
+                        <button type="button" class="btn btn-outline-light m-1"> Nature </button>
+                        <button type="button" class="btn btn-outline-light m-1"> Random Stuff </button>
+                        <button type="button" class="btn btn-outline-light m-1"> Rock </button>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 py-4 px-3">

@@ -80,7 +80,7 @@
                         </a>
                     </div>
                     <div class="mt-5">
-                        <router-link :to="{name: 'schedules'}" class="btn btn-theme wpx-140 rounded-1">
+                        <router-link :to="{name: 'schedules'}" class="btn btn-theme">
                             View schedule
                         </router-link>
                     </div>

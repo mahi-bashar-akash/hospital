@@ -27,7 +27,7 @@
     </div>
 
     <div class="text-end my-3">
-        <button type="button" class="btn btn-theme wpx-90" @click="manageBoxOpen">
+        <button type="button" class="btn btn-theme" @click="manageBoxOpen">
             <span class="d-flex align-items-center justify-content-center w-100">
                 <i class="bi bi-plus-lg me-2"></i> New
             </span>
@@ -84,13 +84,18 @@
                 <div class="modal-body text-light-gray">
 
                     <div class="form-group mb-3">
-                        <label id="upload-image" class="hpx-150 w-100 border d-flex justify-content-center align-items-center text-center flex-column text-secondary rounded-1">
+                        <label id="upload-image" class="hpx-150 w-100 border d-flex justify-content-center align-items-center text-center flex-column text-secondary rounded-1 cursor-pointer" v-if="imageUrl === null">
                             <input type="file" name="upload-image" class="form-control" required autocomplete="new-file" hidden="hidden">
                             <i class="bi bi-cloud-arrow-down-fill fs-2"></i>
                             <span class="d-block">
                                 Click to upload image
                             </span>
                         </label>
+                        <div class="hpx-150 w-100 border d-flex justify-content-center align-items-center text-center flex-column text-secondary rounded-1" v-if="imageUrl !== null">
+                            <button type="button" class="btn border-0 btn-icon">
+                                <i class="bi bi-trash2 text-danger fs-5"></i>
+                            </button>
+                        </div>
                     </div>
 
                     <div class="form-group mb-3">
@@ -175,7 +180,8 @@ export default {
                 { id: '4', title: 'Theme Documentation', svgImage: 'bi-journal-text', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard.' },
                 { id: '5', title: 'Years of Experience', svgImage: 'bi-calendar3', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard.' },
                 { id: '6', title: 'Responsive Layout', svgImage: 'bi-layout-sidebar', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard.' },
-            ]
+            ],
+            imageUrl: null,
         }
     },
 

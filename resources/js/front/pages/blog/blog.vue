@@ -61,7 +61,7 @@
                             </div>
                         </div>
 
-                        <router-link :to="{ name: 'singleBlog' }" class="btn btn-theme-success px-4 py-2 rounded-1">
+                        <router-link :to="{ name: 'singleBlog' }" class="btn btn-theme-success">
                             Learn more
                         </router-link>
 

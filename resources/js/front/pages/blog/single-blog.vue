@@ -218,7 +218,7 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-theme-success wpx-120 rounded-1">
+                            <button type="submit" class="btn btn-theme-success">
                                 Submit
                             </button>
                         </div>

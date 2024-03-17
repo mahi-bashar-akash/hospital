@@ -229,7 +229,7 @@
                             <br><br>
                             Hospitals are places of recovery and healing but there are also safety risks for patients, such as infections, falls and medication errors that can happen despite our best efforts.
                         </div>
-                        <a href="javascript:void(0)" class="btn btn-theme-danger rounded-1 py-3 px-4">
+                        <a href="javascript:void(0)" class="btn btn-theme-danger">
                             Learn more
                         </a>
                     </div>
