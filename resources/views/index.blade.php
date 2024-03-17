@@ -9,7 +9,7 @@
     <title>Front Panel</title>
 
     {{-- source --}}
-    @include('components.source')
+    @include('components.front-source')
 
     {{-- app js --}}
     @vite('resources/js/front/app.js')

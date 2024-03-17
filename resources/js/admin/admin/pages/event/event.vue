@@ -272,9 +272,7 @@ export default {
     },
 
     mounted() {
-
-
-
+        this.flatpickrConfig();
     },
 
     methods: {
@@ -303,6 +301,16 @@ export default {
             let myModalEl = document.getElementById('deleteModal');
             let modal = bootstrap.Modal.getInstance(myModalEl)
             modal.hide();
+        },
+
+        flatpickrConfig() {
+            flatpickr("#date", {
+                altFormat: 'j M Y',
+                altInput: true,
+                minDate: "today",
+                dateFormat: 'Y-m-d',
+                disableMobile: true,
+            })
         },
 
     }
