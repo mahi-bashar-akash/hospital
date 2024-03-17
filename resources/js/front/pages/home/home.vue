@@ -111,7 +111,7 @@
                             </div>
                         </div>
                         <div class="px-3 pt-1 pb-3 small">
-                            {{each.profession}}
+                            {{each.department}}
                         </div>
                         <div class="px-3 pb-3">
                             <div class="truncate-to-2-line">
@@ -284,10 +284,10 @@ export default {
             ],
 
             doctorDataList: [
-                { id: '1', filePath: '/images/doctor/doctor-1.jpg', name: 'Dr. Natasha Isha', profession: 'Pulmonary', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
-                { id: '2', filePath: '/images/doctor/doctor-2.jpg', name: 'Dr. Sifa Chufi', profession: 'Dental', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
-                { id: '3', filePath: '/images/doctor/doctor-3.jpg', name: 'Dr. Adrofi Asfa', profession: 'Neurologist', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
-                { id: '4', filePath: '/images/doctor/doctor-4.jpg', name: 'Dr. Nando Aldo', profession: 'Xray', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
+                { id: '1', filePath: '/images/doctor/doctor-1.jpg', name: 'Dr. Natasha Isha', department: 'Pulmonary', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
+                { id: '2', filePath: '/images/doctor/doctor-2.jpg', name: 'Dr. Sifa Chufi', department: 'Dental', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
+                { id: '3', filePath: '/images/doctor/doctor-3.jpg', name: 'Dr. Adrofi Asfa', department: 'Neurologist', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
+                { id: '4', filePath: '/images/doctor/doctor-4.jpg', name: 'Dr. Nando Aldo', department: 'Xray', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque aut eius eligendi molestiae tempore.' },
             ],
 
             testimonialDataList: [
