@@ -15,9 +15,11 @@ use App\Http\Controllers\FrontController;
 |
 */
 
-//Route::get('/', function () { return view('welcome'); });
-
-/* --- --- --- Admin --- --- --- */
+/*
+|------------------------------------------------
+|---- Admin Auth Pages --------------------------
+|------------------------------------------------
+*/
 
 Route::get('/admin/auth', [AdminController::class, 'admin'])->where('any', '.*')->name('lvs.admin.auth');
 
@@ -25,13 +27,23 @@ Route::get('/admin/auth/{any}', [AdminController::class, 'admin'])->where('any',
 
 Route::get('/admin/auth', function () { return redirect()->route('lvs.admin.auth.any', 'login'); } );
 
+/*
+|------------------------------------------------
+|---- Admin Pages -------------------------------
+|------------------------------------------------
+*/
+
 Route::get('/admin', [AdminController::class, 'admin'])->where('any', '.*')->name('lvs.admin');
 
 Route::get('/admin/{any}', [AdminController::class, 'admin'])->where('any', '.*')->name('lvs.admin.any');
 
 Route::get('/admin', function () { return redirect()->route('lvs.admin.any', 'dashboard'); } );
 
-/* --- --- --- index --- --- --- */
+/*
+|------------------------------------------------
+|---- Front Pages -------------------------------
+|------------------------------------------------
+*/
 
 Route::get('/', [FrontController::class, 'index'])->where('any', '.*')->name('lvs.front');
 
