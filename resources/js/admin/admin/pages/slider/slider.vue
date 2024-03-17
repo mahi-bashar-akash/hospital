@@ -33,11 +33,11 @@
         </button>
     </div>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-2 row-cols-xxl-4">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 row-cols-xxl-4">
 
         <!-- slider -->
         <div v-for="each in slideDataList">
-            <div class="p-3">
+            <div class="pb-3">
                 <div class="card border-0">
                     <div class="card-body border-0 p-2">
                         <img :src="each.filePath" class="img-fluid object-fit-cover w-100 hpx-200 rounded-2" alt="banner 1">

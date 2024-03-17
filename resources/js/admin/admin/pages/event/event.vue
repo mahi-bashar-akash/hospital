@@ -27,7 +27,7 @@
     </div>
 
     <div class="row justify-content-between">
-        <div class="col-md-4">
+        <div class="col-sm-8 col-md-6 col-lg-4">
             <div class="my-3">
                 <div class="position-relative">
                     <input type="text" name="keyword" class="form-control ps-5" placeholder="Search here" required autocomplete="new-keyword">
@@ -37,9 +37,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 text-end">
-            <div class="my-3">
-                <button type="button" class="btn btn-theme" @click="manageBlogOpen">
+        <div class="col-sm-4 col-md-6 col-lg-4 text-end">
+            <div class="mb-3 my-sm-3">
+                <button type="button" class="btn btn-theme" @click="manageEventOpen">
                     <span class="d-flex align-items-center justify-content-center w-100">
                         <i class="bi bi-plus-lg me-2"></i> New
                     </span>
@@ -69,12 +69,12 @@
                     </div>
                     <div class="card-footer border-0 bg-white d-flex justify-content-between pb-3">
                         <div class="col-6 pe-1">
-                            <button type="button" class="btn btn-outline-theme w-100" @click="manageBlogOpen">
+                            <button type="button" class="btn btn-outline-theme w-100" @click="manageEventOpen">
                                 Edit
                             </button>
                         </div>
                         <div class="col-6 ps-1">
-                            <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteBlogOpen">
+                            <button type="button" class="btn btn-outline-theme-danger w-100" @click="deleteEventOpen">
                                 Delete
                             </button>
                         </div>
@@ -91,7 +91,7 @@
             <div class="modal-content p-3">
                 <div class="modal-header border-0">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Manage event</h1>
-                    <button type="button" class="btn-close shadow-none" @click="manageBlogClose"></button>
+                    <button type="button" class="btn-close shadow-none" @click="manageEventClose"></button>
                 </div>
                 <div class="modal-body text-light-gray">
 
@@ -158,7 +158,7 @@
                 <div class="modal-footer border-0 d-flex justify-content-between">
 
                     <div class="col-5">
-                        <button type="button" class="btn btn-secondary w-100" @click="manageBlogClose">
+                        <button type="button" class="btn btn-secondary w-100" @click="manageEventClose">
                             Close
                         </button>
                     </div>
@@ -180,7 +180,7 @@
             <div class="modal-content p-3">
                 <div class="modal-header border-0">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Delete event</h1>
-                    <button type="button" class="btn-close shadow-none" @click="deleteBlogClose"></button>
+                    <button type="button" class="btn-close shadow-none" @click="deleteEventClose"></button>
                 </div>
                 <div class="modal-body text-light-gray text-center">
 
@@ -195,7 +195,7 @@
                 <div class="modal-footer border-0 d-flex justify-content-between">
 
                     <div class="col-5">
-                        <button type="button" class="btn btn-secondary w-100" @click="deleteBlogClose">
+                        <button type="button" class="btn btn-secondary w-100" @click="deleteEventClose">
                             Close
                         </button>
                     </div>
@@ -278,26 +278,26 @@ export default {
     methods: {
 
         /* Function to manage box open */
-        manageBlogOpen(){
+        manageEventOpen(){
             const myModal = new bootstrap.Modal("#manageModal", { keyboard: false } );
             myModal.show();
         },
 
         /* Function to manage box close */
-        manageBlogClose(){
+        manageEventClose(){
             let myModalEl = document.getElementById('manageModal');
             let modal = bootstrap.Modal.getInstance(myModalEl)
             modal.hide();
         },
 
         /* Function to manage slider open */
-        deleteBlogOpen(){
+        deleteEventOpen(){
             const myModal = new bootstrap.Modal("#deleteModal", { keyboard: false } );
             myModal.show();
         },
 
         /* Function to manage slider close */
-        deleteBlogClose(){
+        deleteEventClose(){
             let myModalEl = document.getElementById('deleteModal');
             let modal = bootstrap.Modal.getInstance(myModalEl)
             modal.hide();

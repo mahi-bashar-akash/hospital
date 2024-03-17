@@ -27,7 +27,7 @@
     </div>
 
     <div class="row justify-content-between">
-        <div class="col-md-4">
+        <div class="col-sm-8 col-md-6 col-lg-4">
             <div class="my-3">
                 <div class="position-relative">
                     <input type="text" name="keyword" class="form-control ps-5" placeholder="Search here" required autocomplete="new-keyword">
@@ -37,12 +37,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 text-end">
-            <div class="my-3">
+        <div class="col-sm-4 col-md-6 col-lg-4 text-end">
+            <div class="mb-3 my-sm-3">
                 <button type="button" class="btn btn-theme" @click="manageServiceOpen">
-            <span class="d-flex align-items-center justify-content-center w-100">
-                <i class="bi bi-plus-lg me-2"></i> New
-            </span>
+                    <span class="d-flex align-items-center justify-content-center w-100">
+                        <i class="bi bi-plus-lg me-2"></i> New
+                    </span>
                 </button>
             </div>
         </div>
