@@ -35,7 +35,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary rounded-1 px-4">
+                    <button type="submit" class="btn btn-primary rounded-1 wpx-120">
                         login
                     </button>
 

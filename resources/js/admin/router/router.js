@@ -8,8 +8,6 @@ import {createRouter, createWebHistory} from "vue-router";
 
 import authLayout from "../auth/layout/layout.vue";
 import login from "../auth/pages/login.vue";
-import register from "../auth/pages/register.vue";
-import forget from "../auth/pages/forget.vue";
 
 /*
 |------------------------------------------------
@@ -38,8 +36,6 @@ const routes = [
         path: auth_root_url, name: 'authLayout', component: authLayout,
         children: [
             { path: auth_root_url + '/login', name: 'login', component: login, meta: { title: title + ' - login' } },
-            { path: auth_root_url + '/register', name: 'register', component: register, meta: { title: title + ' - register' } },
-            { path: auth_root_url + '/forget', name: 'forget', component: forget, meta: { title: title + ' - forget' } },
         ]
     },
     {
