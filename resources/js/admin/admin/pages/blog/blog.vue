@@ -36,12 +36,12 @@
 
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4">
 
-        <!-- service -->
+        <!-- blog -->
         <div v-for="each in blogDataList">
             <div class="pb-3">
                 <div class="card border-0">
                     <div class="card-body border-0">
-                        <img :src="each.filePath" class="img-fluid w-100 object-fit-cover rounded-1 hpx-200" alt="service">
+                        <img :src="each.filePath" class="img-fluid w-100 object-fit-cover rounded-1 hpx-200" alt="blog">
                         <div class="pt-3 fw-medium text-theme">
                             <div class="truncate-to-1-line">
                                 {{each.department}}
@@ -71,7 +71,7 @@
 
     </div>
 
-    <!-- service manage modal -->
+    <!-- blog manage modal -->
     <div class="modal fade" id="manageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content p-3">
@@ -90,11 +90,13 @@
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="department" class="form-label">Department</label>
-                        <select name="department" id="department" class="form-select" required autocomplete="new-department">
-                            <option value="0">select department option</option>
-                            <option v-for="each in category" :value="each.name"> {{each.name}} </option>
-                        </select>
+                        <label for="tag" class="form-label">Category</label>
+                        <input id="tag" type="text" name="tag" class="form-control" required autocomplete="new-category">
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="tag" class="form-label">Tag</label>
+                        <input id="tag" type="text" name="tag" class="form-control" required autocomplete="new-tag">
                     </div>
 
                     <div class="form-group">
@@ -122,7 +124,7 @@
         </div>
     </div>
 
-    <!-- service delete modal -->
+    <!-- blog delete modal -->
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content p-3">
