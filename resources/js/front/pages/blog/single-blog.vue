@@ -35,7 +35,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-8 my-4">
+            <div class="col-lg-9 my-4">
 
                 <!-- single blog data title -->
                 <div class="h3 fw-medium text-light-gray mb-3">
@@ -226,7 +226,7 @@
                 </form>
 
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <SearchBlogTag/>
             </div>
         </div>

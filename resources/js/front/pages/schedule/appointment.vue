@@ -29,7 +29,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 pb-4 text-light-gray">
+            <div class="col-lg-9 pb-4 text-light-gray">
 
                 <div class="py-4 fw-medium">
                     You can use this form to book appointment with our doctor. Before booking any appointment make sure you have checked the doctor’s schedule.
@@ -53,8 +53,8 @@
                     </div>
 
                     <div class="form-group mb-3">
-                        <label for="choose-date" class="form-label">Choose Date</label>
-                        <input id="choose-date" type="text" name="choose-date" class="form-control" required autocomplete="new-choose-date">
+                        <label for="date" class="form-label">Choose Date</label>
+                        <input id="date" type="text" name="choose-date" class="form-control" required autocomplete="new-date">
                     </div>
 
                     <div class="form-group mb-3">
@@ -78,7 +78,7 @@
                 </form>
 
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
 
                 <SearchBlogTag/>
 
@@ -107,13 +107,21 @@ export default {
 
     mounted() {
 
-
+        this.flatpickrConfig();
 
     },
 
     methods: {
 
-
+        flatpickrConfig() {
+            flatpickr("#date", {
+                altFormat: 'j M Y',
+                altInput: true,
+                minDate: "today",
+                dateFormat: 'Y-m-d',
+                disableMobile: true,
+            })
+        },
 
     }
 

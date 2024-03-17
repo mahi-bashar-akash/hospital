@@ -29,7 +29,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 text-light-gray my-4">
+            <div class="col-lg-9 text-light-gray my-4">
                 <div class="mb-3">
                     <div class="overflow-hidden w-100 hpx-500">
                         <div id="g-mapdisplay" class="h-100 w-100">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <SearchBlogTag/>
             </div>
         </div>

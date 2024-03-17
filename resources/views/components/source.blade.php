@@ -9,3 +9,7 @@
 
 {{-- owl carousel js --}}
 <script src="{{asset('source-code/owl.carousel/dist/owl.carousel.min.js')}}" type="application/javascript"></script>
+
+{{-- flatpickr css and js --}}
+<link rel="stylesheet" href="{{asset('source-code/flatpickr/dist/flatpickr.css')}}">
+<script src="{{asset('source-code/flatpickr/dist/flatpickr.js')}}"></script>

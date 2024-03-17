@@ -9,7 +9,7 @@
     <title>Admin Panel</title>
 
     {{-- source --}}
-    @include('components.admin-source')
+    @include('components.source')
 
     {{-- app js --}}
     @vite('resources/js/admin/app.js')
