@@ -76,7 +76,7 @@
             <!-- doctor data list -->
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
 
-                <a href="javascript:void(0)" class="p-3 text-decoration-none" v-for="each in galleryDataList">
+                <a href="javascript:void(0)" class="pb-3 text-decoration-none" v-for="each in galleryDataList">
                     <div class="border bg-white">
                         <img :src="each.filePath" class="img-fluid object-fit-cover w-100 hpx-250" :alt="`gallery `+each.id">
                         <div class="ps-3 pt-3 fw-medium text-theme">
