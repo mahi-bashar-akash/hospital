@@ -126,20 +126,13 @@
                     </div>
 
                 </div>
-                <div class="modal-footer border-0 d-flex justify-content-between">
-
-                    <div class="col-5">
-                        <button type="button" class="btn btn-secondary w-100" @click="manageBlogClose">
-                            Close
-                        </button>
-                    </div>
-
-                    <div class="col-5">
-                        <button type="button" class="btn btn-theme w-100">
-                            Save
-                        </button>
-                    </div>
-
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary wpx-90" @click="manageBlogClose">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-theme wpx-90">
+                        Save
+                    </button>
                 </div>
             </div>
         </div>

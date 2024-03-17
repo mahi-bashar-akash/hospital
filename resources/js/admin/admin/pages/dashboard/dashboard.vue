@@ -12,7 +12,7 @@
     <div class="row">
 
         <!-- slider count -->
-        <div class="mb-3 p-2 col-12 col-sm-6 col-xl-4 col-xxl-3">
+        <div class="p-2 col-12 col-sm-6 col-xl-4 col-xxl-3">
             <router-link :to="{name: 'slider'}" class="card card-hover border-0 text-center text-decoration-none">
                 <div class="card-body py-4 px-2">
                     <div class="mb-3 fs-4 d-block">

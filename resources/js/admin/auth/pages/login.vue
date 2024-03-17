@@ -3,7 +3,7 @@
     <div class="container-fluid authentication">
         <div class="row justify-content-center align-items-center flex-column vh-100 p-3">
 
-            <div class="auth-content border rounded-3 p-3 p-sm-5">
+            <div class="auth-content shadow rounded-3 p-3 p-sm-5 bg-white">
 
                 <div class="mb-3 text-center h4">
                     Admin panel
@@ -35,7 +35,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary wpx-90">
                         login
                     </button>
 

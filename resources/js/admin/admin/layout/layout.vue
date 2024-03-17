@@ -116,12 +116,6 @@
                                         </router-link>
                                     </li>
                                     <li>
-                                        <router-link :to="{name: 'settings'}" class="dropdown-item">
-                                            <i class="bi bi-gear me-2"></i>
-                                            Settings
-                                        </router-link>
-                                    </li>
-                                    <li>
                                         <button type="button" class="dropdown-item">
                                             <i class="bi bi-box-arrow-right me-2"></i>
                                             Logout

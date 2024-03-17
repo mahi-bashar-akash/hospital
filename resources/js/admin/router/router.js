@@ -26,7 +26,6 @@ import blog from "../admin/pages/blog/blog.vue";
 import event from "../admin/pages/event/event.vue";
 import department from "../admin/pages/department/department.vue";
 import profile from "../admin/pages/profile/profile.vue";
-import settings from "../admin/pages/settings/settings.vue";
 
 const title = window.core.APP_NAME
 const auth_root_url = "/admin/auth";
@@ -51,7 +50,6 @@ const routes = [
             { path: admin_root_url + '/event', name: 'event', component: event, meta: { title: title + ' - event' } },
             { path: admin_root_url + '/department', name: 'department', component: department, meta: { title: title + ' - department' } },
             { path: admin_root_url + '/profile', name: 'profile', component: profile, meta: { title: title + ' - profile' } },
-            { path: admin_root_url + '/settings', name: 'settings', component: settings, meta: { title: title + ' - settings' } },
         ]
     },
 ];

@@ -125,20 +125,28 @@
                         <input id="date" type="text" name="date" class="form-control" required autocomplete="new-date">
                     </div>
 
-                    <div class="form-group mb-3">
-                        <label for="time" class="form-label">Select time</label>
-                        <div class="row">
-                            <div class="col-md-6">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label for="time" class="form-label">Start time</label>
                                 <select name="startDate" id="time" autocomplete="new-start-time" class="form-select">
-                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <select name="endDate" id="time" autocomplete="new-end-time" class="form-select">
-                                    <option v-for="each in timeData" :value="each.time">{{each.time}}</option>
+                                    <option v-for="each in timeData" :value="each.time">
+                                        {{each.time}}
+                                    </option>
                                 </select>
                             </div>
                         </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="time" class="form-label">End time</label>
+                            <select name="endDate" id="time" autocomplete="new-end-time" class="form-select">
+                                <option v-for="each in timeData" :value="each.time">
+                                    {{each.time}}
+                                </option>
+                            </select>
+                        </div>
+
                     </div>
 
                     <div class="form-group mb-3">
@@ -155,20 +163,13 @@
                     </div>
 
                 </div>
-                <div class="modal-footer border-0 d-flex justify-content-between">
-
-                    <div class="col-5">
-                        <button type="button" class="btn btn-secondary w-100" @click="manageEventClose">
-                            Close
-                        </button>
-                    </div>
-
-                    <div class="col-5">
-                        <button type="button" class="btn btn-theme w-100">
-                            Save
-                        </button>
-                    </div>
-
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary wpx-90" @click="manageEventClose">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-theme wpx-90">
+                        Save
+                    </button>
                 </div>
             </div>
         </div>

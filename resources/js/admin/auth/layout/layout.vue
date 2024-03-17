@@ -1,5 +1,7 @@
 <template>
-    <router-view/>
+    <div class="bg-light-theme">
+        <router-view/>
+    </div>
 </template>
 
 <script>
