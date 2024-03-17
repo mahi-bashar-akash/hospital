@@ -76,24 +76,28 @@
             <!-- doctor data list -->
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
-                <router-link :to="{name: 'singleDoctor'}" class="p-3 text-decoration-none text-light-gray" v-for="each in doctorDataList">
-                    <div class="border bg-white h-100">
-                        <img :src="each.filePath" class="img-fluid object-fit-cover w-100 hpx-250" :alt="`doctor `+each.id">
-                        <div class="px-3 pt-3 fw-medium text-theme">
-                            <div class="truncate-to-1-line">
-                                {{each.name}}
+                <div v-for="each in doctorDataList">
+                    <div class="pb-3">
+                        <router-link :to="{name: 'singleDoctor'}" class="text-decoration-none text-light-gray">
+                            <div class="border bg-white h-100">
+                                <img :src="each.filePath" class="img-fluid object-fit-cover w-100 hpx-250" :alt="`doctor `+each.id">
+                                <div class="px-3 pt-3 fw-medium text-theme">
+                                    <div class="truncate-to-1-line">
+                                        {{each.name}}
+                                    </div>
+                                </div>
+                                <div class="px-3 pt-1 pb-3 small">
+                                    {{each.profession}}
+                                </div>
+                                <div class="px-3 pb-3">
+                                    <div class="truncate-to-2-line">
+                                        {{each.description}}
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="px-3 pt-1 pb-3 small">
-                            {{each.profession}}
-                        </div>
-                        <div class="px-3 pb-3">
-                            <div class="truncate-to-2-line">
-                                {{each.description}}
-                            </div>
-                        </div>
+                        </router-link>
                     </div>
-                </router-link>
+                </div>
 
             </div>
 

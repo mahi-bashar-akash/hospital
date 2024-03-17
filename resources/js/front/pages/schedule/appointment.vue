@@ -35,7 +35,7 @@
                     You can use this form to book appointment with our doctor. Before booking any appointment make sure you have checked the doctor’s schedule.
                 </div>
 
-                <form autocomplete="off">
+                <form autocomplete="off" class="col-lg-6">
 
                     <div class="form-group mb-3">
                         <label for="patient-name" class="form-label">Patient Name</label>
