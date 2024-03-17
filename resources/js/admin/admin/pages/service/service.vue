@@ -26,12 +26,26 @@
 
     </div>
 
-    <div class="text-end my-3">
-        <button type="button" class="btn btn-theme" @click="manageServiceOpen">
+    <div class="row justify-content-between">
+        <div class="col-md-4">
+            <div class="my-3">
+                <div class="position-relative">
+                    <input type="text" name="keyword" class="form-control ps-5" placeholder="Search here" required autocomplete="new-keyword">
+                    <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-end">
+            <div class="my-3">
+                <button type="button" class="btn btn-theme" @click="manageServiceOpen">
             <span class="d-flex align-items-center justify-content-center w-100">
                 <i class="bi bi-plus-lg me-2"></i> New
             </span>
-        </button>
+                </button>
+            </div>
+        </div>
     </div>
 
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4">
