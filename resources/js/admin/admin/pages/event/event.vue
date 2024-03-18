@@ -272,14 +272,13 @@ export default {
 
     },
 
-    mounted() {
-        this.flatpickrConfig();
-    },
+    mounted() {  },
 
     methods: {
 
         /* Function to manage box open */
         manageEventOpen(){
+            this.flatpickrConfig();
             const myModal = new bootstrap.Modal("#manageModal", { keyboard: false } );
             myModal.show();
         },

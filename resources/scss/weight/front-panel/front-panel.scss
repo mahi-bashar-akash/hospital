@@ -226,4 +226,15 @@
         }
     }
 
+    .chat-content {
+        bottom: -350px;
+        transition: 0.3s all ease-in-out;
+
+        &.active {
+            bottom: 0;
+            transition: 0.3s all ease-in-out;
+        }
+
+    }
+
 }
