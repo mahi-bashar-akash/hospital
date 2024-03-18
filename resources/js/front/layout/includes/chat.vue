@@ -1,6 +1,6 @@
 <template>
 
-    <div class="position-fixed end-0 z-3 chat-content" :class="{active: chatManage}">
+    <div class="position-fixed start-0 z-3 chat-content" :class="{active: chatManage}">
         <div class="wpx-350 hpx-400 shadow bg-white border">
             <div class="hpx-50 d-flex justify-content-between align-items-center border-bottom">
                 <div class="fw-medium ps-3">Customer care</div>
