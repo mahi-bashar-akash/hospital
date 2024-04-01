@@ -20,12 +20,12 @@
                             </router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link :to="{name: 'doctor'}" class="nav-link" @click="collapse">
+                            <router-link :to="{name: 'doctor'}" class="nav-link" @click="collapse" :class="{ 'router-link-active' : $route.name === 'singleDoctor' || $route.name === 'schedules' }">
                                 Doctors
                             </router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link :to="{name: 'department'}" class="nav-link" @click="collapse">
+                            <router-link :to="{name: 'department'}" class="nav-link" @click="collapse" :class="{ 'router-link-active' : $route.name === 'singleDepartment' }">
                                 Departments
                             </router-link>
                         </li>
@@ -35,17 +35,17 @@
                             </router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link :to="{name: 'service'}" class="nav-link" @click="collapse">
+                            <router-link :to="{name: 'service'}" class="nav-link" @click="collapse" :class="{ 'router-link-active' : $route.name === 'singleService' }">
                                 Services
                             </router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link :to="{name: 'event'}" class="nav-link" @click="collapse">
+                            <router-link :to="{name: 'event'}" class="nav-link" @click="collapse" :class="{ 'router-link-active' : $route.name === 'singleEvent' }">
                                 Events
                             </router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link :to="{name: 'blog'}" class="nav-link" @click="collapse">
+                            <router-link :to="{name: 'blog'}" class="nav-link" @click="collapse" :class="{ 'router-link-active' : $route.name === 'singleBlog' }">
                                 Blogs
                             </router-link>
                         </li>

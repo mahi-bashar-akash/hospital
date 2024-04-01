@@ -78,7 +78,7 @@
 
                 <div v-for="each in galleryDataList">
                     <div class="pb-3">
-                        <a href="javascript:void(0)" class="text-decoration-none">
+                        <a href="javascript:void(0)" class="text-decoration-none" @click="manageGalleryOpen(each)">
                             <div class="border bg-white">
                                 <img :src="each.filePath" class="img-fluid object-fit-cover w-100 hpx-250" :alt="`gallery `+each.id">
                                 <div class="ps-3 pt-3 fw-medium text-theme">
@@ -131,6 +131,20 @@
 
     </div>
 
+    <!-- Gallery modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-icon rounded-circle wpx-25 hpx-25 d-flex justify-content-center align-items-center" @click="manageGalleryClose"></button>
+                </div>
+                <div class="modal-body border-0">
+                    <img :src="singleData.filePath" class="img-fluid w-100 object-fit-cover rounded-3" :alt="singleData.name">
+                </div>
+            </div>
+        </div>
+    </div>
+
 </template>
 
 <script>
@@ -140,6 +154,7 @@ export default {
     data(){
 
         return{
+            singleData: '',
             imageUrl: '/images/breadcrumb.jpg',
             category: [
                 { id: '1', category: 'Facility' },
@@ -168,7 +183,19 @@ export default {
 
     methods: {
 
+        /* Function to show gallery modal open */
+        manageGalleryOpen(data){
+            this.singleData = data
+            const myModal = new bootstrap.Modal("#galleryModal", { keyboard: false } );
+            myModal.show();
+        },
 
+        /* Function to show gallery modal close */
+        manageGalleryClose(){
+            let myModalEl = document.getElementById('galleryModal');
+            let modal = bootstrap.Modal.getInstance(myModalEl)
+            modal.hide();
+        },
 
     }
 

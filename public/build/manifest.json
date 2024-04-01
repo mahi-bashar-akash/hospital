@@ -16,7 +16,7 @@
     "isEntry": true
   },
   "resources/js/admin/app.js": {
-    "file": "assets/app-DXZugCx1.js",
+    "file": "assets/app-CJySEq9X.js",
     "src": "resources/js/admin/app.js",
     "isEntry": true,
     "imports": [
@@ -39,7 +39,7 @@
     ]
   },
   "resources/scss/styles.scss": {
-    "file": "assets/styles-U1uWRxYE.css",
+    "file": "assets/styles-BU-ulSQH.css",
     "src": "resources/scss/styles.scss",
     "isEntry": true
   }

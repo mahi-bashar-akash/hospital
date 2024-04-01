@@ -18,6 +18,7 @@
 
             .collapse, .collapsing {
                 font-size: 14px !important;
+                font-weight: 600;
 
                 @media screen and (max-width: 991px) {
                     position: fixed;

@@ -39,28 +39,28 @@
 
                     <div class="form-group mb-3">
                         <label for="patient-name" class="form-label">Patient Name</label>
-                        <input id="patient-name" type="text" name="patient-name" class="form-control" required autocomplete="new-patient-name">
+                        <input id="patient-name" type="text" name="patient-name" class="form-control" required autocomplete="new-patient-name" v-model="appointmentParam.name">
                     </div>
 
                     <div class="form-group mb-3">
                         <label for="phone-number" class="form-label">Phone Number</label>
-                        <input id="phone-number" type="text" name="phone-number" class="form-control" required autocomplete="new-phone-number">
+                        <input id="phone-number" type="text" name="phone-number" class="form-control" required autocomplete="new-phone-number" v-model="appointmentParam.phoneNumber">
                     </div>
 
                     <div class="form-group mb-3">
                         <label for="email-address" class="form-label">Email Address</label>
-                        <input id="email-address" type="email" name="email-address" class="form-control" required autocomplete="new-email-address">
+                        <input id="email-address" type="email" name="email-address" class="form-control" required autocomplete="new-email-address" v-model="appointmentParam.email">
                     </div>
 
                     <div class="form-group mb-3">
                         <label for="date" class="form-label">Choose Date</label>
-                        <input id="date" type="text" name="choose-date" class="form-control" required autocomplete="new-date">
+                        <input id="date" type="text" name="choose-date" class="form-control" required autocomplete="new-date" v-model="appointmentParam.date">
                     </div>
 
                     <div class="form-group mb-3">
                         <label for="choose-department" class="form-label">Department</label>
-                        <select id="choose-department" name="choose-department" class="form-select" required autocomplete="new-choose-department">
-                            <option value="0">Select Department</option>
+                        <select id="choose-department" name="choose-department" class="form-select" required autocomplete="new-choose-department" v-model="appointmentParam.department">
+                            <option value="select-department">Select Department</option>
                             <option value="urology">Urology</option>
                             <option value="dental">Dental</option>
                             <option value="neurologist">Neurologist</option>
@@ -101,6 +101,13 @@ export default {
 
         return{
             imageUrl: '/images/breadcrumb.jpg',
+            appointmentParam: {
+                name: '',
+                phoneNumber: '',
+                email: '',
+                date: '',
+                department: 'select-department',
+            }
         }
 
     },
